@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'highlight.js/styles/github-dark.css';
+
+html { scroll-behavior: smooth; }
+body { background: #0d1117; color: #e6edf3; }
+
+/* Markdown prose */
+.prose { max-width: none; }
+.prose h1 { font-size: 2rem; font-weight: 700; margin: 2rem 0 1rem; color: #e6edf3; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+.prose h2 { font-size: 1.5rem; font-weight: 600; margin: 1.75rem 0 0.75rem; color: #e6edf3; }
+.prose h3 { font-size: 1.25rem; font-weight: 600; margin: 1.5rem 0 0.5rem; color: #e6edf3; }
+.prose p { margin: 0.75rem 0; line-height: 1.7; color: #c9d1d9; }
+.prose ul, .prose ol { margin: 0.5rem 0; padding-left: 1.5rem; }
+.prose li { margin: 0.25rem 0; color: #c9d1d9; }
+.prose ul { list-style-type: disc; }
+.prose ol { list-style-type: decimal; }
+.prose strong { color: #e6edf3; font-weight: 600; }
+.prose em { color: #8b949e; }
+.prose a { color: #58a6ff; text-decoration: none; }
+.prose a:hover { text-decoration: underline; }
+.prose blockquote { border-left: 3px solid #58a6ff; padding: 0.5rem 1rem; margin: 1rem 0; background: #161b22; border-radius: 0 6px 6px 0; }
+.prose blockquote p { color: #8b949e; }
+.prose code { background: #161b22; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.875rem; color: #e6edf3; }
+.prose pre { background: #161b22 !important; border: 1px solid #30363d; border-radius: 6px; padding: 1rem; overflow-x: auto; margin: 1rem 0; }
+.prose pre code { background: none; padding: 0; }
+.prose table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.prose th { text-align: left; padding: 0.5rem; border-bottom: 2px solid #30363d; color: #e6edf3; font-weight: 600; }
+.prose td { padding: 0.5rem; border-bottom: 1px solid #21262d; color: #c9d1d9; }
+.prose hr { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #0d1117; }
+::-webkit-scrollbar-thumb { background: #30363d; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #484f58; }
+
+/* Sidebar active */
+.sidebar-active { background: #21262d; border-left: 2px solid #58a6ff; }

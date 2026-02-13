@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>⚡ Donna Task Board</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --panel: #161b22;
+    --border: #30363d;
+    --text: #c9d1d9;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+
+    --tag-recruit-bg: #1f3a5f; --tag-recruit-text: #58a6ff;
+    --tag-system-bg: #3b2e1a; --tag-system-text: #f0883e;
+    --tag-tech-bg: #1a3b2e; --tag-tech-text: #3fb950;
+    --tag-content-bg: #3b1a3b; --tag-content-text: #d2a8ff;
+    --tag-ops-bg: #3b2a1a; --tag-ops-text: #db8b4e;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  .app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    background: #0b1117;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+
+  .btn {
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .btn:hover { border-color: #3d4651; }
+  .btn.primary { color: #fff; background: #1f6feb; border-color: #1f6feb; }
+  .btn.danger { color: #fff; background: #da3633; border-color: #da3633; }
+
+  .board {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(220px, 1fr));
+    gap: 14px;
+    padding: 16px;
+    overflow-x: auto;
+  }
+
+  .column {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+  }
+
+  .column-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 10px;
+  }
+
+  .col-title {
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .count {
+    background: #0b1117;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 12px;
+    border-radius: 999px;
+    padding: 2px 8px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+  }
+
+  .card {
+    background: #0f141b;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px;
+    cursor: grab;
+    transition: border-color 0.15s ease;
+  }
+  .card.dragging { opacity: 0.5; }
+  .card:hover { border-color: #3d4651; }
+
+  .card-title {
+    font-weight: 600;
+    font-size: 13.5px;
+    margin-bottom: 6px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .card-desc {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+  }
+  .tag.recruit { background: var(--tag-recruit-bg); color: var(--tag-recruit-text); }
+  .tag.system  { background: var(--tag-system-bg); color: var(--tag-system-text); }
+  .tag.tech    { background: var(--tag-tech-bg); color: var(--tag-tech-text); }
+  .tag.content { background: var(--tag-content-bg); color: var(--tag-content-text); }
+  .tag.ops     { background: var(--tag-ops-bg); color: var(--tag-ops-text); }
+
+  .add-card {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .drop-hint {
+    border: 1px dashed #3d4651;
+  }
+
+  /* Modal */
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(13, 17, 23, 0.65);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  .modal-backdrop.show { display: flex; }
+
+  .modal {
+    width: min(520px, 92vw);
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+  }
+  .modal h3 {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+  }
+
+  .field {
+    margin-bottom: 12px;
+  }
+  .field label {
+    font-size: 12px;
+    color: var(--muted);
+    display: block;
+    margin-bottom: 6px;
+  }
+  .field input[type="text"],
+  .field textarea,
+  .field select {
+    width: 100%;
+    background: #0f141b;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 13px;
+  }
+  .field textarea { min-height: 80px; resize: vertical; }
+
+  .tag-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .tag-options label {
+    font-size: 12px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  @media (max-width: 1100px) {
+    .board { grid-template-columns: repeat(3, minmax(220px, 1fr)); }
+  }
+  @media (max-width: 800px) {
+    .board { grid-template-columns: repeat(2, minmax(220px, 1fr)); }
+  }
+  @media (max-width: 560px) {
+    .board { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="toolbar">
+    <div class="title">⚡ Donna Task Board</div>
+    <button id="resetBtn" class="btn">Reset Board</button>
+  </div>
+  <div id="board" class="board"></div>
+</div>
+
+<div id="modalBackdrop" class="modal-backdrop">
+  <div class="modal">
+    <h3>Edit Card</h3>
+    <div class="field">
+      <label for="titleInput">Title</label>
+      <input id="titleInput" type="text" />
+    </div>
+    <div class="field">
+      <label for="descInput">Description</label>
+      <textarea id="descInput"></textarea>
+    </div>
+    <div class="field">
+      <label>Tags</label>
+      <div class="tag-options" id="tagOptions"></div>
+    </div>
+    <div class="field">
+      <label for="priorityInput">Priority</label>
+      <select id="priorityInput">
+        <option value="">None</option>
+        <option value="high">High (🔴)</option>
+        <option value="med">Medium (🟡)</option>
+        <option value="low">Low (⚪)</option>
+      </select>
+    </div>
+    <div class="modal-actions">
+      <button id="deleteBtn" class="btn danger">Delete</button>
+      <div>
+        <button id="cancelBtn" class="btn">Cancel</button>
+        <button id="saveBtn" class="btn primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const STORAGE_KEY = "donna-kanban";
+
+  const TAGS = ["recruit", "system", "tech", "content", "ops"];
+
+  const DEFAULT_DATA = {
+    columns: [
+      { id: "backlog", title: "Backlog", color: "#8b949e", cards: [
+        { id: id(), title: "Build Objection-Handling Scripts", description: "", tags: ["content"], priority: "med" },
+        { id: id(), title: "Content and Training Automation", description: "", tags: ["content"], priority: "med" },
+        { id: id(), title: "PropHog Credit Refill Strategy", description: "", tags: ["recruit"], priority: "med" },
+        { id: id(), title: "Email Access Setup", description: "", tags: ["ops"], priority: "low" },
+        { id: id(), title: "Tevah Org Chart Pull", description: "", tags: ["ops"], priority: "low" },
+        { id: id(), title: "Recruiting Scorecard Dashboard", description: "", tags: ["system"], priority: "med" }
+      ]},
+      { id: "todo", title: "To Do", color: "#58a6ff", cards: [
+        { id: id(), title: "Process 70 GFI Agents from Ringy", description: "", tags: ["recruit","system"], priority: "high" },
+        { id: id(), title: "Diagnose Post-SMS Drop-Off", description: "", tags: ["recruit"], priority: "high" },
+        { id: id(), title: "Fix OpenClaw Config Patch", description: "", tags: ["tech"], priority: "med" },
+        { id: id(), title: "Pipeline Intelligence Workflow", description: "", tags: ["system"], priority: "med" },
+        { id: id(), title: "Agent Follow-Up Tracker Live", description: "", tags: ["system","recruit"], priority: "high" }
+      ]},
+      { id: "inprogress", title: "In Progress", color: "#f0883e", cards: [
+        { id: id(), title: "Daily Workflows Implementation", description: "", tags: ["system"], priority: "high" }
+      ]},
+      { id: "blocked", title: "Blocked", color: "#f85149", cards: [
+        { id: id(), title: "Analyze Gary Zoom Interview", description: "", tags: ["content"], priority: "high" },
+        { id: id(), title: "iDecide Walkthrough", description: "", tags: ["system"], priority: "med" },
+        { id: id(), title: "PropHog Lead Sourcing Workflow 3", description: "", tags: ["recruit"], priority: "high" }
+      ]},
+      { id: "done", title: "Done", color: "#3fb950", cards: [
+        { id: id(), title: "Telegram Channel Setup", description: "", tags: ["tech"], priority: "" },
+        { id: id(), title: "5 GFI Playbook Deep Analysis", description: "", tags: ["system"], priority: "" },
+        { id: id(), title: "Gary Recruiting OS", description: "", tags: ["system"], priority: "" },
+        { id: id(), title: "Agent Activation OS", description: "", tags: ["system"], priority: "" },
+        { id: id(), title: "Agent Follow-Up Tracker Template", description: "", tags: ["system"], priority: "" },
+        { id: id(), title: "Tech Stack Setup", description: "", tags: ["tech"], priority: "" },
+        { id: id(), title: "Ringy Agent Extraction", description: "", tags: ["recruit","tech"], priority: "" },
+        { id: id(), title: "Morning Brief Cron", description: "", tags: ["ops"], priority: "" },
+        { id: id(), title: "Overnight Build Cron", description: "", tags: ["ops"], priority: "" },
+        { id: id(), title: "Anthony Onboarding Transcript Analysis", description: "", tags: ["content"], priority: "" },
+        { id: id(), title: "System Draft v1 Feedback", description: "", tags: ["system"], priority: "" }
+      ]}
+    ]
+  };
+
+  let board = loadData();
+  let currentEdit = null;
+
+  const boardEl = document.getElementById("board");
+  const modalBackdrop = document.getElementById("modalBackdrop");
+  const titleInput = document.getElementById("titleInput");
+  const descInput = document.getElementById("descInput");
+  const priorityInput = document.getElementById("priorityInput");
+  const tagOptions = document.getElementById("tagOptions");
+  const deleteBtn = document.getElementById("deleteBtn");
+  const saveBtn = document.getElementById("saveBtn");
+  const cancelBtn = document.getElementById("cancelBtn");
+  const resetBtn = document.getElementById("resetBtn");
+
+  initTagOptions();
+  render();
+
+  resetBtn.addEventListener("click", () => {
+    board = deepClone(DEFAULT_DATA);
+    saveData();
+    render();
+  });
+
+  cancelBtn.addEventListener("click", closeModal);
+  modalBackdrop.addEventListener("click", (e) => {
+    if (e.target === modalBackdrop) closeModal();
+  });
+
+  saveBtn.addEventListener("click", () => {
+    if (!currentEdit) return;
+    const { columnId, cardId } = currentEdit;
+    const card = findCard(columnId, cardId);
+    if (!card) return;
+
+    const title = titleInput.value.trim() || "Untitled";
+    const desc = descInput.value.trim();
+    const tags = Array.from(tagOptions.querySelectorAll("input"))
+      .filter(i => i.checked).map(i => i.value);
+    const priority = priorityInput.value;
+
+    card.title = title;
+    card.description = desc;
+    card.tags = tags;
+    card.priority = priority;
+
+    saveData();
+    render();
+    closeModal();
+  });
+
+  deleteBtn.addEventListener("click", () => {
+    if (!currentEdit) return;
+    const { columnId, cardId } = currentEdit;
+    const col = board.columns.find(c => c.id === columnId);
+    if (!col) return;
+    col.cards = col.cards.filter(c => c.id !== cardId);
+    saveData();
+    render();
+    closeModal();
+  });
+
+  function render() {
+    boardEl.innerHTML = "";
+    board.columns.forEach(col => {
+      const column = document.createElement("div");
+      column.className = "column";
+      column.dataset.columnId = col.id;
+
+      const header = document.createElement("div");
+      header.className = "column-header";
+
+      const title = document.createElement("div");
+      title.className = "col-title";
+      title.style.color = col.color;
+      title.textContent = col.title;
+
+      const count = document.createElement("div");
+      count.className = "count";
+      count.textContent = col.cards.length;
+
+      header.appendChild(title);
+      header.appendChild(count);
+
+      const cards = document.createElement("div");
+      cards.className = "cards";
+      cards.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        cards.classList.add("drop-hint");
+      });
+      cards.addEventListener("dragleave", () => cards.classList.remove("drop-hint"));
+      cards.addEventListener("drop", (e) => {
+        e.preventDefault();
+        cards.classList.remove("drop-hint");
+        const cardId = e.dataTransfer.getData("text/plain");
+        moveCard(cardId, col.id, null);
+      });
+
+      col.cards.forEach(card => {
+        const cardEl = document.createElement("div");
+        cardEl.className = "card";
+        cardEl.draggable = true;
+        cardEl.dataset.cardId = card.id;
+
+        cardEl.addEventListener("dragstart", (e) => {
+          cardEl.classList.add("dragging");
+          e.dataTransfer.setData("text/plain", card.id);
+        });
+        cardEl.addEventListener("dragend", () => cardEl.classList.remove("dragging"));
+
+        cardEl.addEventListener("dragover", (e) => {
+          e.preventDefault();
+          cardEl.classList.add("drop-hint");
+        });
+        cardEl.addEventListener("dragleave", () => cardEl.classList.remove("drop-hint"));
+
+        cardEl.addEventListener("drop", (e) => {
+          e.preventDefault();
+          cardEl.classList.remove("drop-hint");
+          const draggedId = e.dataTransfer.getData("text/plain");
+          moveCard(draggedId, col.id, card.id);
+        });
+
+        cardEl.addEventListener("dblclick", () => openModal(col.id, card.id));
+
+        const titleRow = document.createElement("div");
+        titleRow.className = "card-title";
+        const prio = priorityEmoji(card.priority);
+        titleRow.textContent = prio ? `${prio} ${card.title}` : card.title;
+
+        const desc = document.createElement("div");
+        desc.className = "card-desc";
+        desc.textContent = card.description || "";
+
+        const tagsEl = document.createElement("div");
+        tagsEl.className = "tags";
+        card.tags.forEach(t => {
+          const tag = document.createElement("span");
+          tag.className = `tag ${t}`;
+          tag.textContent = t;
+          tagsEl.appendChild(tag);
+        });
+
+        cardEl.appendChild(titleRow);
+        if (card.description) cardEl.appendChild(desc);
+        if (card.tags.length) cardEl.appendChild(tagsEl);
+
+        cards.appendChild(cardEl);
+      });
+
+      const addBtn = document.createElement("button");
+      addBtn.className = "btn add-card";
+      addBtn.textContent = "+ Add card";
+      addBtn.addEventListener("click", () => {
+        const newCard = { id: id(), title: "New Task", description: "", tags: [], priority: "" };
+        col.cards.push(newCard);
+        saveData();
+        render();
+        openModal(col.id, newCard.id);
+      });
+
+      column.appendChild(header);
+      column.appendChild(cards);
+      column.appendChild(addBtn);
+      boardEl.appendChild(column);
+    });
+  }
+
+  function openModal(columnId, cardId) {
+    const card = findCard(columnId, cardId);
+    if (!card) return;
+    currentEdit = { columnId, cardId };
+
+    titleInput.value = card.title;
+    descInput.value = card.description || "";
+    priorityInput.value = card.priority || "";
+
+    Array.from(tagOptions.querySelectorAll("input")).forEach(i => {
+      i.checked = card.tags.includes(i.value);
+    });
+
+    modalBackdrop.classList.add("show");
+    titleInput.focus();
+  }
+
+  function closeModal() {
+    modalBackdrop.classList.remove("show");
+    currentEdit = null;
+  }
+
+  function moveCard(cardId, toColumnId, beforeCardId) {
+    if (!cardId) return;
+
+    let card = null;
+    let fromCol = null;
+    board.columns.forEach(c => {
+      const idx = c.cards.findIndex(x => x.id === cardId);
+      if (idx !== -1) {
+        card = c.cards.splice(idx, 1)[0];
+        fromCol = c;
+      }
+    });
+    if (!card) return;
+
+    const targetCol = board.columns.find(c => c.id === toColumnId);
+    if (!targetCol) return;
+
+    if (beforeCardId) {
+      const idx = targetCol.cards.findIndex(x => x.id === beforeCardId);
+      if (idx === -1) targetCol.cards.push(card);
+      else targetCol.cards.splice(idx, 0, card);
+    } else {
+      targetCol.cards.push(card);
+    }
+
+    saveData();
+    render();
+  }
+
+  function priorityEmoji(p) {
+    if (p === "high") return "🔴";
+    if (p === "med") return "🟡";
+    if (p === "low") return "⚪";
+    return "";
+  }
+
+  function initTagOptions() {
+    tagOptions.innerHTML = "";
+    TAGS.forEach(t => {
+      const label = document.createElement("label");
+      const input = document.createElement("input");
+      input.type = "checkbox";
+      input.value = t;
+      label.appendChild(input);
+      const span = document.createElement("span");
+      span.textContent = t;
+      label.appendChild(span);
+      tagOptions.appendChild(label);
+    });
+  }
+
+  function findCard(columnId, cardId) {
+    const col = board.columns.find(c => c.id === columnId);
+    if (!col) return null;
+    return col.cards.find(c => c.id === cardId) || null;
+  }
+
+  function saveData() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(board));
+  }
+
+  function loadData() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return deepClone(DEFAULT_DATA);
+      const parsed = JSON.parse(raw);
+      if (!parsed || !parsed.columns) return deepClone(DEFAULT_DATA);
+      return parsed;
+    } catch {
+      return deepClone(DEFAULT_DATA);
+    }
+  }
+
+  function deepClone(obj) {
+    return JSON.parse(JSON.stringify(obj));
+  }
+
+  function id() {
+    return "c_" + Math.random().toString(36).slice(2) + Date.now().toString(36);
+  }
+</script>
+</body>
+</html>
