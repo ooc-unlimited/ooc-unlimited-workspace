@@ -5,6 +5,7 @@
 - **Key gap**: Closing. Gary recruits great but must close his own clients (stop matching up).
 - **DC's minimums**: 2 directs + 10K pts/mo = $6K/mo = $72K/yr = Jennifer retired.
 - **RITA always**: Recruiting Is The Answer.
+- **Gary's focus priority**: Recruiting FIRST, then sales, then scale. Scale = retention. Build systems that are duplicatable and easy to understand so recruits stick.
 - **Gary gave blanket implementation authority** — build it, don't ask permission.
 - **Never mix trading with GFI business**. Separate project, separate folder.
 - **Sub-agent cost rule**: Use cheaper models for research/content spawns. Opus for strategy only.
@@ -36,7 +37,12 @@
 - **Tom** 📈 Trading (NQ, Discord only) | **Amanda** 📱 Social Media | **Cody** 🔧 Coding
 - **Webby** 🎨 Web Design | **Austin** 🧮 Sales Lead (final product decision, Gary picks carrier)
 - **Doug** 📈 IUL Specialist → Austin | **Chris** 🛡️ Whole Life Specialist → Austin
+- **Matt** 🏋️ Chief Field Chairman (built from Matt Welsh video, agents/matt/)
 - **RITA** 🎯 "Recruiting Is The Answer" | **Papa Kapp** 📚 Brian Carruthers (GFI only, never trading)
+
+## Brand
+- **Tagline:** "Mission before commission" (coined Feb 13, 2026)
+- Brand messaging package: memory/2026-02-13-mission-before-commission.md
 
 ## Pipeline & Recruiting
 - Recruits licensed agents via PropHog (credits exhausted) + Ringy SMS drip
@@ -57,6 +63,14 @@ ICA+$199 → Welcome SMS → "Expect the Pushback" Email → CE Part 1 (Gary boo
 - Gary adds triggers (2 clicks), Donna builds actions. No Voice AI. No browser during overnight builds.
 - Comp grid: `gfi-compensation-grid.md` (100% payout: F&G IUL, Ameritas WL, Ethos Term)
 
+## Marketing & SEO
+- 25 marketing skills installed (.claude/skills/) — SEO, paid ads, email, CRO, copywriting, programmatic SEO, etc.
+- Product marketing context: .claude/product-marketing-context.md (all skills reference this)
+- Google Search Console: verified, sitemap submitted (Feb 13)
+- SEO audit done: meta tags, robots.txt, sitemap.xml, Open Graph, schema, canonicals
+- Apify MCP configured (needs Gary's API token). PPTX generator skill installed.
+- Command system: /create-plan, /implement, /analyze-competitor, /market-scan, /recruit-research
+
 ## Tech Stack (details in TOOLS.md)
 - Ringy, PropHog, iDecide, Tevah, GHL, Codex CLI, Gemini/Grok/Perplexity APIs
 - garylifeindex.com: Next.js port 3001, Cloudflare tunnel, password Start345
@@ -66,7 +80,7 @@ ICA+$199 → Welcome SMS → "Expect the Pushback" Email → CE Part 1 (Gary boo
 - QMD: markdown search (5 collections, 157 files)
 
 ## Cron Schedule
-3AM Overnight Build → 4AM Sweat Shop → 7AM Morning Brief → 7:05-7:20 Agent Huddles (Stacy/Austin/Amanda/Webby post to own channel + #general, with last30days research) → 8AM Stacy Audit + Cleanup → 8:30AM Tom Trading → 9AM Zoom → 2PM Research Report → 11PM Amanda Social
+3AM Overnight Build → 4AM Sweat Shop → 7AM Morning Brief → 7:05 Stacy → 7:20 Austin → 7:35 Amanda → 7:50 Webby (15-min gaps to avoid API rate limits) → 8AM Stacy Audit + Cleanup → 8:30AM Tom Trading → 9AM Zoom → 2PM Research Report → 11PM Amanda Social
 
 ## Key Decisions (Feb 12)
 - Trading removed from website → Tom's Discord only

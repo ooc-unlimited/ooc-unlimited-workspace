@@ -1,41 +1,71 @@
-# Gary's Goals — Brain Dump (Feb 12, 2026)
+# Gary's Goals — Brain Dump
 
-## The Number
-**$556,000 cash flow by May 23, 2026 (birthday)**
-- Moonshot: $556K ($159K/mo for 3.5 months)
-- Realistic floor: $165K ($47K/mo) — still replaces Jennifer's income 2x over
-- Either outcome is a win
+*Last updated: 2026-02-14*
 
-## The Method
-1. **Recruit** — both licensed AND non-licensed people
-2. **Sell them a policy** — moral responsibility, we own what we talk about ("sharing, not selling")
-3. **Get referrals** — every policy client introduces their top 3 friends/acquaintances
-4. **One joins the team** — out of every 3 referrals, recruit one as an agent
-5. **Repeat** — train new agents to do exactly the same cycle
-6. **Delegate within ~1 month** — Gary does the system himself for a month, then hands off to someone else while he focuses on automation + team growth
+## 🎯 The Number
+- **$556K cash flow by May 23, 2026** (44th birthday)
+- **Floor: $165K** (minimum acceptable)
+- Starting from $0 cash flow (as of Feb 2026)
 
-## Recruiting Targets
-- Current best month: 7-8 agents
-- Goal: **double-digit recruiting per month** (what the industry giants do)
-- Stretch: **triple-digit recruiting** — blow people out of the water
-- RITA is always on his mind: Recruiting Is The Answer
+## 💰 DC's Path to EMD
+- 30 recruits/year → 6 solid doing minimums
+- Each solid agent: 2 directs + 10K pts/mo = $6K/mo override
+- 6 × $6K = $36K/mo = **$432K/yr**
+- EMD promotion target: June 30, 2026
+- Jennifer retired when override hits $72K/yr (6 agents × $12K/yr)
 
-## The Trainer Problem
-- Gary has a few downline agents willing to train his new recruits
-- **Problem**: Trainers are getting upset — they get no financial benefit because Gary gets the override, not them
-- **Options being considered**:
-  1. Constant flow of new trainers (seems like what everyone does — unsustainable)
-  2. Pay a training team out of pocket (but starting at $0 cash flow right now)
-- **Not yet solved** — needs a sustainable model
+## 📊 Recruiting Goals
+- Double-digit → **triple-digit monthly recruiting** (best month ever: 7-8)
+- Target: 30+ recruits/month
+- Current pipeline: PropHog → Ringy → iDecide → Zoom → ICA → Onboarding
+- Fix the stick rate: currently ~5-10%, need 20%+
+- **RITA**: Recruiting Is The Answer — always
 
-## Current Reality
-- Starting from $0 cash flow right now
-- The only way to make money: sell policies
-- Gary believes this is very doable
+## 🏗️ Systems to Build
+- Duplicatable onboarding that works WITHOUT Gary on every call
+- DC's 3-part onboarding system: CE Part 1 → CE Part 2 → HOT → Field Training
+- GHL automations: 7-day drip, post-grand opening, mid-month check-in, stall alerts
+- Grand Opening system that creates urgency and community
 
-## Key Principles
-- "Sharing, not selling" — we own what we talk about
-- Moral responsibility to protect families
-- Recruit everybody (RITA)
-- System should be duplicatable — train agents to repeat the exact cycle
-- Gary wants to focus on automation + team growth, not be the one doing everything forever
+## 💼 Sales Goals
+- Gary must close his OWN clients (stop matching up with downline)
+- Products: F&G IUL, Corbridge Term, Ethos Term, Ameritas Whole Life
+- Build client pipeline in GHL separate from recruiting pipeline
+- Every new recruit → sell them a policy → get 3 referrals → recruit 1
+
+## 👥 Team Building
+- Delegate within 1 month (by March 2026)
+- Trainer problem: no override benefit for downline trainers — unsolved
+- Need field trainers who can run Grand Openings independently
+- Matt Welsh / Coach DC methodology as the training standard
+
+## 📈 Key Metrics to Track (Tevah)
+- Recruits per month
+- Life licenses issued
+- Net licenses (licenses minus lapses)
+- Total points
+- Points per recruit
+- Net license ratio
+- Cash flow
+- % recruits with license
+- Revenue per life license
+- Points per license
+- Persistency
+- Chargebacks
+
+## 🌐 Brand & Marketing
+- OOC Unlimited is the brand (not GFI externally)
+- "Mission before commission" tagline
+- garylifeindex.com as recruiting hub
+- /join page for prospects
+- Social media presence via Amanda
+
+## 🗓️ Key Dates
+- May 23, 2026 — Gary's 44th birthday ($556K target)
+- June 30, 2026 — EMD promotion target
+- Dec 14, 2026 — Domain renewal (garylifeindex.com)
+
+## Priority Order
+1. **Recruiting** — volume, volume, volume
+2. **Sales** — close your own deals
+3. **Scale** — retention, duplicatable systems, agent stick rate

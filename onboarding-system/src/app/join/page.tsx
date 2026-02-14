@@ -139,7 +139,7 @@ function Section({ id, children, className = '' }: { id?: string; children: Reac
 /* ───────── Pill label ───────── */
 function Pill({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-block text-sm font-semibold tracking-widest uppercase text-purple-accent mb-4">
+    <span className="block text-sm font-semibold tracking-widest uppercase text-purple-accent mb-4 text-center">
       {children}
     </span>
   );
@@ -282,18 +282,30 @@ export default function JoinPage() {
               </div>
             ))}
           </div>
+
+          {/* Hero CTA */}
+          <div className="mt-14">
+            <button
+              onClick={() => document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' })}
+              className="relative inline-flex items-center gap-3 bg-gradient-to-r from-[#4A0E78] to-[#7B2FBE] hover:from-[#5B1A91] hover:to-[#9333EA] text-white font-bold text-lg md:text-xl px-10 py-5 rounded-full shadow-[0_0_40px_rgba(123,47,190,0.4)] hover:shadow-[0_0_60px_rgba(123,47,190,0.6)] transition-all duration-300 hover:scale-105 active:scale-95"
+            >
+              <span>Join the Mission</span>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+            </button>
+            <p className="text-gray-500 text-sm mt-3">Mission before commission.</p>
+          </div>
         </div>
       </section>
 
       {/* ════════ PROFESSIONAL OPPORTUNITY ════════ */}
       <Section>
-        <Pill>Professional Opportunity</Pill>
+        <div className="text-center"><Pill>Professional Opportunity</Pill></div>
         <h2 className="text-3xl md:text-5xl font-bold mb-4 text-center">GFI × Team OOC Career</h2>
         <p className="text-gray-400 text-lg max-w-3xl mx-auto text-center mb-12">
           Join a professional team representing 25+ of America&apos;s largest financial institutions with comprehensive training and ongoing support
         </p>
 
-        <h3 className="text-2xl font-bold mb-8">Requirements &amp; Qualifications</h3>
+        <h3 className="text-2xl font-bold mb-8 text-center">Requirements &amp; Qualifications</h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>, title: 'Age Requirement', text: 'Must be 18 years or older to participate in this financial services opportunity and meet regulatory compliance standards.' },
@@ -356,7 +368,7 @@ export default function JoinPage() {
 
       {/* ════════ THREE PILLARS ════════ */}
       <Section>
-        <Pill>Our Mission</Pill>
+        <div className="text-center"><Pill>Our Mission</Pill></div>
         <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center">Three Pillars of Impact</h2>
         <p className="text-gray-400 max-w-3xl mx-auto text-center mb-12">
           GFI&apos;s mission is to make a significant impact on people&apos;s financial well-being through a holistic approach to financial empowerment. The focus is on closing the wealth gap and empowering everyone to build wealth and turn dreams into realities.
@@ -378,7 +390,7 @@ export default function JoinPage() {
 
       {/* ════════ 12 REASONS ════════ */}
       <Section className="bg-[#0d0d0d]">
-        <Pill>Why Choose Us</Pill>
+        <div className="text-center"><Pill>Why Choose Us</Pill></div>
         <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center">12 Reasons Why GFI × Team OOC</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {reasons.map((r) => (
@@ -393,7 +405,7 @@ export default function JoinPage() {
 
       {/* ════════ EXIT PLAN / POP ════════ */}
       <Section>
-        <h3 className="text-2xl md:text-4xl font-bold mb-6">What&apos;s your exit plan?</h3>
+        <h3 className="text-2xl md:text-4xl font-bold mb-6 text-center">What&apos;s your exit plan?</h3>
         <p className="text-gray-400 max-w-3xl mx-auto text-center mb-8">
           Most people work their whole lives making someone else rich. We&apos;re doing something different.
         </p>
@@ -411,21 +423,46 @@ export default function JoinPage() {
           </p>
         </div>
 
-        <h3 className="text-2xl font-bold mb-4">This Is About Your Future.</h3>
-        <p className="text-gray-400 max-w-3xl mx-auto text-center mb-6">
-          The Partnership Ownership Program gives you real ownership. Not just a paycheck. Real wealth that grows with the company. Think about it: Would you rather get paid to build someone else&apos;s dream? Or own a piece of something that could change your family&apos;s life forever?
-        </p>
-        <p className="text-purple-accent font-bold text-lg mb-4">
-          The people joining us now will be the millionaires of tomorrow.
-        </p>
-        <p className="text-gray-400 max-w-3xl mx-auto text-center mb-8">
-          This opportunity won&apos;t last forever. As we get closer to going public, ownership becomes harder to get. Your choice is simple: Keep making other people rich, or start building something that&apos;s yours.
-        </p>
-        <p className="text-white text-xl font-bold">What&apos;s it going to be?</p>
+        <div className="text-center">
+          <h3 className="text-2xl font-bold mb-4">This Is About Your Future.</h3>
+          <p className="text-gray-400 max-w-3xl mx-auto mb-6">
+            The Partnership Ownership Program gives you real ownership. Not just a paycheck. Real wealth that grows with the company. Think about it: Would you rather get paid to build someone else&apos;s dream? Or own a piece of something that could change your family&apos;s life forever?
+          </p>
+          <p className="text-purple-accent font-bold text-lg mb-4">
+            The people joining us now will be the millionaires of tomorrow.
+          </p>
+          <p className="text-gray-400 max-w-3xl mx-auto mb-8">
+            This opportunity won&apos;t last forever. As we get closer to going public, ownership becomes harder to get. Your choice is simple: Keep making other people rich, or start building something that&apos;s yours.
+          </p>
+          <p className="text-white text-xl font-bold">What&apos;s it going to be?</p>
+        </div>
       </Section>
 
       {/* ════════ CULTURE VIDEOS ════════ */}
       <CultureVideos />
+
+      {/* ════════ TESTIMONIALS ════════ */}
+      <Section>
+        <div className="text-center"><Pill>What People Are Saying</Pill></div>
+        <h2 className="text-3xl md:text-5xl font-bold mb-3 text-center">Real Talk From Real Agents</h2>
+        <div className="w-16 h-1 bg-purple-accent mx-auto mb-12 rounded-full" />
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {[
+            { quote: "I was about to quit the industry. Gary showed me there was a real path.", role: "Former Independent Agent" },
+            { quote: "First time someone explained the comp honestly. No smoke and mirrors — just a real opportunity.", role: "Career Changer" },
+            { quote: "They have a real system — not just promises. I knew within the first week this was different.", role: "New Agent" },
+            { quote: "The culture here is what kept me. The money is great, but the people are why I stay.", role: "Team Leader" },
+            { quote: "I went from zero clients to a full book in 6 months. The training actually works.", role: "Licensed Agent" },
+            { quote: "Nobody else offered ownership. That changed everything for me.", role: "Agency Builder" },
+          ].map((t, i) => (
+            <div key={i} className="bg-white/5 border border-gray-800 rounded-2xl p-6 hover:border-purple-accent/30 transition-colors relative">
+              <span className="text-purple-accent text-4xl font-serif leading-none absolute top-4 left-5">&ldquo;</span>
+              <p className="text-gray-300 text-sm leading-relaxed mt-6 mb-4 italic">{t.quote}</p>
+              <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider">— {t.role}</p>
+            </div>
+          ))}
+        </div>
+      </Section>
 
       {/* ════════ CARRIER NETWORK ════════ */}
       <Section className="bg-[#0d0d0d]">
@@ -488,7 +525,7 @@ export default function JoinPage() {
             </div>
           ))}
         </div>
-        <p className="text-gray-500 text-sm mt-6 max-w-3xl">
+        <p className="text-gray-500 text-sm mt-6 max-w-3xl mx-auto text-center">
           As a GFI agent, you&apos;ll be equipped to provide these comprehensive solutions, backed by industry-leading training and support from 25+ A+ rated financial institutions.
         </p>
       </Section>
@@ -547,8 +584,8 @@ export default function JoinPage() {
       {/* ════════ FAQ ════════ */}
       <Section>
         <h2 className="text-3xl md:text-5xl font-bold mb-4 text-center">Frequently Asked Questions</h2>
-        <p className="text-gray-400 text-lg mb-12">Answers to common questions about this career opportunity</p>
-        <div className="space-y-3 max-w-4xl">
+        <p className="text-gray-400 text-lg mb-12 text-center">Answers to common questions about this career opportunity</p>
+        <div className="space-y-3 max-w-4xl mx-auto">
           <FAQ q="What is the $199 platform fee for?"
             a={<>The $199 platform fee provides comprehensive access to our professional development ecosystem, including 20+ live training sessions per week, personalized coaching, ongoing mentorship, comprehensive product training, sales methodology, compliance education, ongoing professional and personal development, and all the tools and resources necessary to build a successful financial services career.<br/><br/>If you&apos;re not yet licensed, this investment also covers all study materials and courses needed for licensing, plus the background check requirement. This is comparable to other professional industries — for example, real estate professionals typically spend between $400–$1,000 total to get their license, plus ongoing monthly fees for errors and omissions insurance.</>}
           />

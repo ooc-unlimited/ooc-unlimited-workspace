@@ -5,14 +5,15 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const nav = [
-  { href: '/', label: 'Dashboard', icon: '📊' },
-  { href: '/agents', label: 'Agents', icon: '👥' },
-  { href: '/alerts', label: 'Alerts', icon: '🚨' },
-  { href: '/sms-templates', label: 'SMS Templates', icon: '💬' },
-  { href: '/email-preview', label: 'Pushback Email', icon: '📧' },
-  { href: '/metrics', label: 'Metrics', icon: '📈' },
-  { href: '/carriers', label: 'Carrier Guide', icon: '🏢' },
-  { href: '/grand-opening', label: 'Grand Openings', icon: '🎉' },
+  { href: '/admin/dashboard', label: 'Dashboard', icon: '📊' },
+  { href: '/admin/agents', label: 'Agents', icon: '👥' },
+  { href: '/admin/alerts', label: 'Alerts', icon: '🚨' },
+  { href: '/admin/sms-templates', label: 'SMS Templates', icon: '💬' },
+  { href: '/admin/email-preview', label: 'Pushback Email', icon: '📧' },
+  { href: '/admin/metrics', label: 'Metrics', icon: '📈' },
+  { href: '/admin/carriers', label: 'Carrier Guide', icon: '🏢' },
+  { href: '/admin/grand-opening', label: 'Grand Openings', icon: '🎉' },
+  { href: '/admin/mission-control', label: 'Mission Control', icon: '🎛️' },
 ];
 
 export default function Sidebar() {
@@ -27,7 +28,7 @@ export default function Sidebar() {
       </div>
       <nav className="flex-1 p-4 space-y-1">
         {nav.map(item => {
-          const active = pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href));
+          const active = pathname === item.href || (item.href !== '/admin/dashboard' && pathname.startsWith(item.href));
           return (
             <Link
               key={item.href}

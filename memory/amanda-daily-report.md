@@ -1,101 +1,100 @@
-# Amanda 📱 Daily Report — Feb 12, 2026
+# Amanda 📱 Social Media Report — Feb 13, 2026
 
-## Social Media Branding Trends (Last 30 Days Research)
+## 🔍 Last 30 Days Trend Research
 
-### What's Working Right Now
+### What's Working in Insurance/Financial Services Content
+- **Gen Z/Millennial-targeted educational content** is leading engagement — life insurers like State Farm and Haven Life are extending campaigns to TikTok with creator partnerships
+- **Finfluencer-style posts** teaching retirement basics, legacy planning, and income protection via quizzes and downloadable guides
+- TikTok engagement leads all platforms at **0.98%** for financial services content
+- **Content funnel format**: Quiz → Educational tip → CTA link is converting highest quality leads
+- **Insurtechs partnering with TikTok creators** who link directly to applications — blending education with action
 
-**1. Short-Form Video Dominates Everything**
-- 15-60 second videos outperform static posts across all platforms
-- Hook in first 3 seconds is non-negotiable — bold stat or provocative question
-- One concept per video — don't try to explain everything
-- Trending audio + text overlays = algorithm boost on TikTok/Reels
+### Faceless Content Trends
+- **Faceless is dominating** for compliance and scalability — text overlays, animations, AI voiceovers
+- Educational carousels and Reels showing "protection solutions" via infographics and stats (no face needed)
+- TikTok duets/stitches reacting to user queries using screen recordings of tools
+- Day-in-life animation series building trust post-by-post
 
-**2. Faceless Branding is Mainstream**
-- Animated explainers with voiceover only (no face on camera needed)
-- Stock footage + bold text overlays for recruiting content
-- Canva, CapCut AI, and AI avatar tools making this accessible to solo agents
-- Carousel-to-video conversion (infographic → scrolling Reel) drives saves/shares
+### AI-Generated Content Trends
+- **GenAI personalization exploding** — advisors using AI for tailored funnels, personalized quotes, drip content
+- AI agents autonomously creating email sequences, quizzes, and short videos
+- ElevenLabs voice cloning + HeyGen avatars = the standard stack for faceless creators at scale
+- Compliance-first AI content (human-overseen) is the sweet spot
 
-**3. AI Content Automation is Standard**
-- AI scripting 10+ hook variations, picking winners via analytics
-- CapCut AI for auto-edits, ChatGPT/Claude for scripting
-- AI chatbots in link-in-bio funneling DMs to applications
-- 40% of content tasks now automatable
+### Short-Form Video Hooks That Are Working
+1. **Question hooks**: "Saving for retirement at 25? Here's why life insurance fits"
+2. **Stat shocks**: "86% of Gen Z use apps for bills — but 70% have zero life insurance"
+3. **Scenario starters**: "You just got laid off. Here's the ONE thing you need to protect first"
+4. **Contrast hooks**: "I went from $100K in debt to $12K checks. Here's the industry no one talks about"
+5. **Pattern interrupt**: Start mid-story, no intro, raw and real
 
-**4. "Day in the Life" Recruiting Content**
-- "Day in the life of a 6-figure insurance agent" format getting massive reach
-- Fast cuts, trending audio, text overlays showing income/lifestyle
-- Works faceless (screen recordings, stock footage, testimonials)
-
-**5. Educational-First, Sell-Second**
-- Teaching beats pitching — "Here's why minimum auto insurance could bankrupt you" outperforms "Buy insurance from me"
-- Educational content builds trust AND recruits (agents see you as an authority)
-
----
-
-## 🔥 5 Content Ideas for Gary This Week
-
-### Idea 1: "I Got Fired After 23 Years" Story Reel
-- **Format**: 30-45s talking head OR faceless with text overlays + dramatic music
-- **Hook**: "I got fired from Best Buy after 23 years. Here's what happened next."
-- **Flow**: Fired → broke → found insurance → $12K check in 45 min
-- **CTA**: "If you're where I was, DM me 'START'"
-- **Platform**: TikTok, Instagram Reels, YouTube Shorts
-- **AI Tools**: CapCut AI for auto-captions and transitions, ChatGPT for script variations
-
-### Idea 2: "Your Job Won't Pay You This" Faceless Stat Card
-- **Format**: 15s faceless video — animated stat card with voiceover
-- **Hook**: "Your 9-5 will never pay you $12,000 in 45 minutes."
-- **Flow**: Show the math — traditional salary vs insurance commissions, residuals, team overrides
-- **CTA**: "Comment 'HOW' and I'll show you the path"
-- **Platform**: TikTok, Reels
-- **AI Tools**: Canva animated templates, ElevenLabs for voiceover
-
-### Idea 3: "Why Your Dad Needed Life Insurance" Emotional Hook
-- **Format**: 45-60s talking head or text-over-stock-footage
-- **Hook**: "My father died without life insurance. Here's what that actually looks like."
-- **Flow**: Real story → financial impact on family → "I do this so no family goes through that"
-- **CTA**: "Tag someone who needs to hear this" / "Link in bio for free assessment"
-- **Platform**: Instagram Reels (emotional content performs best), TikTok
-- **AI Tools**: CapCut for cinematic edits, AI background music matching
-
-### Idea 4: "Day in the Life — Remote Insurance Agent" Recruiting Reel
-- **Format**: 30s fast-cut montage, trending audio, text overlays
-- **Hook**: "What does a remote insurance agent's day actually look like?"
-- **Flow**: Morning coffee → Virtual Office Zoom → client call → commission notification → family time
-- **CTA**: "Want this life? Comment 'AGENT' below"
-- **Platform**: TikTok (recruiting content crushes here), Reels
-- **AI Tools**: CapCut templates for day-in-the-life format, AI-generated b-roll
-
-### Idea 5: "3 Things Nobody Tells You About Insurance Sales" Carousel → Reel
-- **Format**: 3-slide carousel converted to scrolling Reel (15-20s)
-- **Hook**: "3 things nobody tells you about insurance sales 👇"
-- **Slides**: 1) You don't need a warm market 2) Licensed agents can start earning week 1 3) Your upline's system matters more than your talent
-- **CTA**: "Save this. Share with someone considering the industry."
-- **Platform**: Instagram (carousels get saved), convert to Reel for TikTok
-- **AI Tools**: Canva carousel templates, auto-convert to video
+### Viral Formats
+| Format | Why It Works |
+|--------|-------------|
+| Content Funnel Reel (Quiz → Tip → CTA) | High lead quality, nurtures to consultation |
+| Creator Partnership Duet/Stitch | Trusted endorsements, direct conversions |
+| AI-Personalized Carousel (Problem → Stat → Solution) | Compliance-safe, builds funnels |
+| Humanizing Story Series (faceless animations) | Builds trust without on-camera time |
+| Before/After Transformation | Income journey = aspirational + proof |
 
 ---
 
-## Recommended AI Tool Stack
-| Tool | Use | Cost |
-|------|-----|------|
-| CapCut (Pro) | Auto-captions, transitions, templates | Free/$8/mo |
-| Canva Pro | Carousels, stat cards, brand templates | $13/mo |
-| ChatGPT/Claude | Script variations, hooks, captions | Already have |
-| ElevenLabs | Voiceover for faceless content | $5/mo starter |
-| Later/Buffer | Scheduling across platforms | $18/mo |
+## 🎯 5 Content Ideas for Gary This Week (Feb 14-20)
 
-## Posting Schedule Recommendation
-- **Monday**: Idea 4 (Day in the Life — recruiting)
-- **Tuesday**: Idea 5 (3 Things carousel → Reel)
-- **Wednesday**: Idea 2 (Faceless stat card)
-- **Thursday**: Idea 3 (Emotional hook — Dad's story)
-- **Friday**: Idea 1 (Fired from Best Buy story)
+### 1. 💔 Valentine's Day Special: "The Greatest Love Letter Is a Policy"
+- **Hook**: "This Valentine's Day, the most romantic thing you can do costs less than dinner"
+- **Format**: Faceless Reel — text overlay + emotional music + stat cards
+- **Script**: Connect love/family protection to Valentine's Day. End with "Your family deserves more than flowers. They deserve a plan."
+- **Platform**: TikTok + IG Reels (cross-post)
+- **AI Tools**: ElevenLabs (Gary's voice), DALL-E (quote cards), CapCut (assembly)
+- **Pillar**: Family & Why + Financial Education
 
-Post between 7-9 AM EST or 7-9 PM EST for maximum reach.
+### 2. 🔥 "I Got Fired After 23 Years — Best Thing That Ever Happened"
+- **Hook**: "I gave a company 23 years. They gave me a box." (text on screen, 2-sec pause, then story)
+- **Format**: Talking-head style via HeyGen avatar OR real Gary (60 sec)
+- **Script**: Quick-hit version of Gary's story. Fired → broke → found insurance → $12K checks. End with "If you're where I was, DM me."
+- **Platform**: TikTok (primary), IG Reels, Facebook
+- **AI Tools**: HeyGen (avatar version), ElevenLabs (voiceover version), CapCut (captions)
+- **Pillar**: My Story + Recruiting
+
+### 3. 📊 "The $12K Screenshot" — Income Proof Carousel
+- **Hook**: Slide 1: "$12,000. One check. 45 minutes of work." Slide 2: "Here's the industry no one talks about."
+- **Format**: 5-slide Instagram carousel with income breakdown (compliant — no guarantees, proper disclaimers)
+- **Script**: Slide 1: Hook. Slide 2: What the industry is. Slide 3: How it works. Slide 4: What day 1 looks like. Slide 5: CTA — "Link in bio to learn more"
+- **Platform**: Instagram (carousel), TikTok (swipe-style video version)
+- **AI Tools**: DALL-E (slide graphics), Canva (layout), Claude (copy)
+- **Pillar**: Recruiting + Agent Life
+
+### 4. 🎓 "3 Things Your Financial Advisor Won't Tell You About Life Insurance"
+- **Hook**: "Your financial advisor is keeping 3 secrets from you" (text, dramatic pause)
+- **Format**: Faceless Reel — stat cards + voiceover + stock footage
+- **Script**: 1) Term isn't always best. 2) Cash value is real wealth. 3) You're probably underinsured. Each point = 10 seconds with supporting stat.
+- **Platform**: TikTok + IG Reels
+- **AI Tools**: ElevenLabs (Gary's voice), DALL-E (stat cards), CapCut (edit)
+- **Pillar**: Financial Education
+- **Disclaimer**: Include "Not financial advice" text overlay
+
+### 5. 🏢 "Day in the Life of a Virtual Office" — BTS Reel
+- **Hook**: "This is what a $0 overhead insurance business looks like" (screen recording of Zoom office)
+- **Format**: Quick-cut BTS montage — Zoom Virtual Office clips, Slack messages, team wins, morning brief
+- **Script**: Show the energy. Morning meeting → team training → agent closing → celebration. End with "No cubicle. No commute. No cap on income."
+- **Platform**: TikTok + Instagram + Facebook
+- **AI Tools**: Opus Clip (from Zoom recordings), CapCut (assembly + captions)
+- **Pillar**: Agent Life + Recruiting
 
 ---
 
-*Research sources: Seapoint Digital, ASNOA, Insurance Journal, PropertyCasualty360, Vertafore 2026 Agency Outlook, Perplexity AI synthesis*
-*Generated by Amanda 📱 — Feb 12, 2026 11:00 PM EST*
+## 📋 Action Items for Gary
+- [ ] Film ONE 60-second video this weekend: your "fired after 23 years" story (Content Idea #2 — we can repurpose into 5+ pieces)
+- [ ] Approve Valentine's Day post for tomorrow (Content Idea #1)
+- [ ] Screenshot your latest commission check (blur sensitive info) for carousel (Content Idea #3)
+
+## 🔧 Tools Needed (Not Yet Set Up)
+- ElevenLabs voice clone (need 30-sec recording from Gary)
+- HeyGen avatar (need 2-min video from Gary)
+- SocialBee account (need Gary's social handles connected)
+
+---
+
+*Report generated by Amanda 📱 — Social Media Factory Director*
+*Next research cycle: Monday Feb 16, 2026*

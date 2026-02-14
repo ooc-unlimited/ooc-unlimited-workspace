@@ -1,0 +1,14 @@
+# robots.txt for garylifeindex.com
+User-agent: *
+Allow: /join
+Disallow: /api/
+Disallow: /login
+Disallow: /agents
+Disallow: /carriers
+Disallow: /alerts
+Disallow: /metrics
+Disallow: /grand-opening
+Disallow: /email-preview
+Disallow: /sms-templates
+
+Sitemap: https://garylifeindex.com/sitemap.xml
