@@ -25,7 +25,12 @@
   <style>
     .text-purple-accent { color: #7B2FBE; }
     .bg-purple-accent { background-color: #4A0E78; }
+    .bg-purple-accent-light { background-color: #5B1A91; }
     .border-purple-accent { border-color: #4A0E78; }
+    .from-purple-accent { --tw-gradient-from: #4A0E78; }
+    .to-purple-accent { --tw-gradient-to: #7B2FBE; }
+    .ring-purple-accent { --tw-ring-color: #4A0E78; }
+    .glow-purple { box-shadow: 0 0 40px rgba(74, 14, 120, 0.3); }
     .gradient-text {
       background: linear-gradient(135deg, #7B2FBE, #A855F7);
       -webkit-background-clip: text;
@@ -34,210 +39,363 @@
     }
   </style>
 </head>
-<body class="bg-[#0a0a0a] text-white min-h-screen">
+<body class="bg-[#0a0a0a] text-white min-h-screen scroll-smooth">
 
-<% 
-  // Define the join page data 
-  const stats = [
-    { label: 'Compensation', value: '133', suffix: '%' },
-    { label: 'A-Rated Carriers', value: '30', suffix: '+' },
-    { label: 'Years Combined Experience', value: '75', suffix: '+' },
-    { label: 'Agent Retention Rate', value: '89', suffix: '%' }
-  ];
-
-  const perks = [
-    { title: 'Industry-Leading Compensation', desc: 'Up to 133% first-year commissions on most products — among the highest in the industry. Plus renewal income that builds your passive revenue stream over time.', icon: '💰' },
-    { title: 'Warm Lead System', desc: 'Skip the cold calls. We provide qualified leads through our marketing system, plus proven scripts and follow-up sequences that convert.', icon: '📞' },
-    { title: '30+ A-Rated Carriers', desc: 'Access to the best companies in the business — State Farm, New York Life, Pacific Life, and more. Find the right fit for every client.', icon: '🏢' },
-    { title: 'Complete Training Program', desc: 'Master the GFI System™: our proven 4-step sales process that turns prospects into clients. Includes objection handling, presentation skills, and closing techniques.', icon: '🎓' },
-    { title: 'Advanced Marketing Support', desc: 'Professional websites, social media campaigns, email sequences, and branded materials. Look like the expert you are becoming.', icon: '📈' },
-    { title: 'Real Ownership Path', desc: 'This isn\'t just a job — it\'s ownership. Build your own agency, recruit your own team, and create generational wealth for your family.', icon: '🔑' }
-  ];
-
-  const requirements = [
-    'Life & Health Insurance License (we help you get it)',
-    'Hunger to build something meaningful',
-    'Coachable mindset and willingness to learn',
-    'Professional appearance and communication',
-    'Reliable transportation and smartphone'
-  ];
-
-  const faqs = [
-    {
-      q: 'Do I need experience in insurance or sales?',
-      a: 'No experience required. We\'ve trained successful agents from all backgrounds — retail, hospitality, education, military, and more. What matters is your mindset and willingness to learn our proven system.'
-    },
-    {
-      q: 'How much can I realistically earn my first year?',
-      a: 'First-year earnings vary based on activity level, but our agents who follow the system typically see $50K-$150K+ in their first year. Top performers exceed $200K. Remember: this is commission-based, so your income reflects your effort.'
-    },
-    {
-      q: 'What does the training process look like?',
-      a: 'Week 1-2: Licensing support and product knowledge. Week 3-4: GFI System training and role-playing. Week 5+: Field training with experienced agents. You\'re never thrown in alone — we build your confidence before you meet your first client.'
-    },
-    {
-      q: 'Is this remote, in-person, or hybrid?',
-      a: 'Hybrid model. Training is in-person for the best learning experience. Once licensed and trained, you have flexibility — work from our office, your home office, or in the field with clients. Results matter more than location.'
-    },
-    {
-      q: 'What makes GFI different from other agencies?',
-      a: 'Mission before commission. We don\'t just recruit bodies — we build careers. You get higher compensation, better training, more support, and a clear path to ownership. Plus access to our exclusive lead system and marketing tools.'
-    },
-    {
-      q: 'How quickly can I get started?',
-      a: 'Fast track: 2-4 weeks from application to first client meeting. This includes licensing (if needed), training completion, and onboarding. We help expedite your licensing and provide study materials to accelerate the process.'
-    }
-  ];
-%>
-
-<div class="min-h-screen bg-[#0a0a0a] text-white">
+<div class="min-h-screen bg-[#0a0a0a] text-white scroll-smooth">
   <!-- ════════ HERO ════════ -->
-  <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 px-6">
-    <div class="absolute inset-0 bg-gradient-to-b from-[#1a0a2e] via-[#0a0a0a] to-[#0a0a0a]"></div>
-    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[600px] h-[600px] bg-purple-600/20 rounded-full blur-[120px]"></div>
+  <section class="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#1a0a2e] via-[#0a0a0a] to-[#0a0a0a]" />
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-purple-accent/20 rounded-full blur-[120px]" />
     <div class="relative z-10 text-center max-w-4xl mx-auto">
-      <span class="block text-sm font-semibold tracking-widest uppercase text-purple-400 mb-4">GFI × Team OOC Career Opportunity</span>
+      <h2 class="text-lg md:text-xl font-semibold text-purple-accent tracking-wide uppercase mb-4">
+        GFI × Team OOC Career Opportunity
+      </h2>
       <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-        Build Your <span class="gradient-text">Financial Services</span> Career
+        Opportunity <span class="gradient-text">Overview</span>
       </h1>
-      <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-8">
-        Join GFI × Team OOC and create a life-changing career in financial services. Up to 133% compensation, proven training system, and real ownership opportunities.
+      <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-16">
+        Learn about this exclusive financial services career opportunity and the qualifications needed to succeed
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#apply" class="bg-purple-600 hover:bg-purple-500 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-colors shadow-lg shadow-purple-600/20">
-          Apply Today
-        </a>
-        <a href="#learn-more" class="border border-gray-700 hover:border-purple-400 text-gray-300 hover:text-white px-8 py-4 rounded-xl text-lg font-semibold transition-colors">
-          Learn More
-        </a>
+
+      <!-- Hero Video -->
+      <div class="max-w-3xl mx-auto mb-16 rounded-2xl overflow-hidden shadow-2xl glow-purple">
+        <div class="relative w-full" style="padding-bottom: 56.25%">
+          <iframe
+            src="https://adilo.bigcommand.com/watch/zIJA8St9"
+            class="absolute inset-0 w-full h-full border-0"
+            allowfullscreen
+            allow="autoplay; fullscreen"
+            title="GFI Empowering Freedom - Company Overview"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Stat counters -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-5 max-w-7xl mx-auto">
+        <div class="text-center bg-white/5 rounded-2xl px-3 py-6 border-t-4 border-purple-accent shadow-lg hover:-translate-y-2 hover:shadow-purple-accent/20 hover:shadow-xl transition-all duration-300 cursor-default overflow-hidden">
+          <span class="text-2xl sm:text-3xl lg:text-[2rem] font-black text-purple-accent whitespace-nowrap">12+</span>
+          <h4 class="text-white font-bold mt-3 text-sm">Specialized Divisions</h4>
+          <p class="text-gray-500 text-xs mt-2 leading-relaxed">Each crafted to honor your unique background and expertise</p>
+        </div>
+        <div class="text-center bg-white/5 rounded-2xl px-3 py-6 border-t-4 border-purple-accent shadow-lg hover:-translate-y-2 hover:shadow-purple-accent/20 hover:shadow-xl transition-all duration-300 cursor-default overflow-hidden">
+          <span class="text-2xl sm:text-3xl lg:text-[2rem] font-black text-purple-accent whitespace-nowrap">18+</span>
+          <h4 class="text-white font-bold mt-3 text-sm">Millionaires Created</h4>
+          <p class="text-gray-500 text-xs mt-2 leading-relaxed">Proven track record of building life-changing wealth</p>
+        </div>
+        <div class="text-center bg-white/5 rounded-2xl px-3 py-6 border-t-4 border-purple-accent shadow-lg hover:-translate-y-2 hover:shadow-purple-accent/20 hover:shadow-xl transition-all duration-300 cursor-default overflow-hidden">
+          <span class="text-2xl sm:text-3xl lg:text-[2rem] font-black text-purple-accent whitespace-nowrap">30+</span>
+          <h4 class="text-white font-bold mt-3 text-sm">A+ Rated Providers</h4>
+          <p class="text-gray-500 text-xs mt-2 leading-relaxed">Access to America's most trusted financial institutions</p>
+        </div>
+        <div class="text-center bg-white/5 rounded-2xl px-3 py-6 border-t-4 border-purple-accent shadow-lg hover:-translate-y-2 hover:shadow-purple-accent/20 hover:shadow-xl transition-all duration-300 cursor-default overflow-hidden">
+          <span class="text-2xl sm:text-3xl lg:text-[2rem] font-black text-purple-accent whitespace-nowrap">50+</span>
+          <h4 class="text-white font-bold mt-3 text-sm">Countries Worldwide</h4>
+          <p class="text-gray-500 text-xs mt-2 leading-relaxed">Global expansion across multiple continents and markets</p>
+        </div>
+        <div class="text-center bg-white/5 rounded-2xl px-3 py-6 border-t-4 border-purple-accent shadow-lg hover:-translate-y-2 hover:shadow-purple-accent/20 hover:shadow-xl transition-all duration-300 cursor-default overflow-hidden">
+          <span class="text-2xl sm:text-3xl lg:text-[2rem] font-black text-purple-accent whitespace-nowrap">58K+</span>
+          <h4 class="text-white font-bold mt-3 text-sm">Agents</h4>
+          <p class="text-gray-500 text-xs mt-2 leading-relaxed">Growing network of successful financial professionals</p>
+        </div>
+        <div class="text-center bg-white/5 rounded-2xl px-3 py-6 border-t-4 border-purple-accent shadow-lg hover:-translate-y-2 hover:shadow-purple-accent/20 hover:shadow-xl transition-all duration-300 cursor-default overflow-hidden">
+          <span class="text-2xl sm:text-3xl lg:text-[2rem] font-black text-purple-accent whitespace-nowrap">100K+</span>
+          <h4 class="text-white font-bold mt-3 text-sm">Clients</h4>
+          <p class="text-gray-500 text-xs mt-2 leading-relaxed">Families and businesses we've helped achieve their financial goals</p>
+        </div>
+      </div>
+
+      <!-- Hero CTA -->
+      <div class="mt-14">
+        <button
+          onclick="document.getElementById('cta').scrollIntoView({ behavior: 'smooth' })"
+          class="relative inline-flex items-center gap-3 bg-gradient-to-r from-[#4A0E78] to-[#7B2FBE] hover:from-[#5B1A91] hover:to-[#9333EA] text-white font-bold text-lg md:text-xl px-10 py-5 rounded-full shadow-[0_0_40px_rgba(123,47,190,0.4)] hover:shadow-[0_0_60px_rgba(123,47,190,0.6)] transition-all duration-300 hover:scale-105 active:scale-95"
+        >
+          <span>Join the Mission</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+        </button>
+        <p class="text-gray-500 text-sm mt-3">Mission before commission.</p>
       </div>
     </div>
   </section>
 
-  <!-- ════════ STATS ════════ -->
-  <section class="py-12 md:py-20 px-6 bg-[#0d0d0d]">
+  <!-- ════════ CULTURE VIDEOS ════════ -->
+  <section class="py-20 md:py-28 px-4 md:px-8 bg-[#0d0d0d]">
     <div class="max-w-6xl mx-auto">
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-        <% stats.forEach(stat => { %>
+      <h2 class="text-3xl md:text-5xl font-bold mb-3 text-center">Culture Makes the Difference</h2>
+      <div class="w-16 h-1 bg-purple-accent mx-auto mb-6 rounded-full"></div>
+      <p class="text-gray-400 text-center text-lg mb-12 max-w-2xl mx-auto">
+        Everyone says they have great culture. Hit play and see the difference for yourself.
+      </p>
+
+      <!-- Video modal -->
+      <div id="videoModal" class="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 hidden">
+        <div class="relative w-full max-w-lg">
+          <button onclick="closeVideo()" class="absolute -top-10 right-0 text-white text-2xl hover:text-purple-accent">✕</button>
+          <div class="relative w-full rounded-xl overflow-hidden" style="padding-bottom: 177%">
+            <iframe id="videoPlayer" class="absolute inset-0 w-full h-full border-0" allowfullscreen allow="autoplay; fullscreen" title="Culture video"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
         <div class="text-center">
-          <div class="text-2xl sm:text-3xl lg:text-[2rem] font-black text-purple-accent whitespace-nowrap">
-            <%= stat.value %><%= stat.suffix %>
-          </div>
-          <div class="text-gray-400 text-sm md:text-base font-medium mt-2"><%= stat.label %></div>
-        </div>
-        <% }); %>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════ PERKS ════════ -->
-  <section id="learn-more" class="py-20 md:py-28 px-6">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="block text-sm font-semibold tracking-widest uppercase text-purple-400 mb-4">What You Get</span>
-        <h2 class="text-3xl md:text-5xl font-bold mb-6">More Than a Job — An Opportunity</h2>
-        <p class="text-gray-400 text-lg">
-          We don't just recruit. We build careers. Here's what separates GFI × Team OOC from everyone else.
-        </p>
-      </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <% perks.forEach(perk => { %>
-        <div class="bg-white/5 border border-gray-800 rounded-xl p-6 hover:border-purple-400/50 transition-colors">
-          <span class="text-3xl block mb-4"><%= perk.icon %></span>
-          <h3 class="text-xl font-bold mb-3 text-white"><%= perk.title %></h3>
-          <p class="text-gray-400 text-sm leading-relaxed"><%= perk.desc %></p>
-        </div>
-        <% }); %>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════ REQUIREMENTS ════════ -->
-  <section class="py-20 md:py-28 px-6 bg-[#0d0d0d]">
-    <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-12">
-        <span class="block text-sm font-semibold tracking-widest uppercase text-purple-400 mb-4">Requirements</span>
-        <h2 class="text-3xl md:text-5xl font-bold mb-6">Do You Have What It Takes?</h2>
-        <p class="text-gray-400 text-lg">
-          We're looking for the right people, not necessarily the most experienced. Here's what we need:
-        </p>
-      </div>
-      <div class="space-y-4">
-        <% requirements.forEach(req => { %>
-        <div class="flex items-start gap-4 bg-white/5 border border-gray-800 rounded-lg p-4">
-          <span class="text-green-400 text-xl flex-shrink-0 mt-0.5">✓</span>
-          <span class="text-gray-300"><%= req %></span>
-        </div>
-        <% }); %>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════ FAQ ════════ -->
-  <section class="py-20 md:py-28 px-6">
-    <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-12">
-        <span class="block text-sm font-semibold tracking-widest uppercase text-purple-400 mb-4">FAQ</span>
-        <h2 class="text-3xl md:text-5xl font-bold mb-6">Questions? We Have Answers.</h2>
-      </div>
-      <div class="space-y-4">
-        <% faqs.forEach((faq, index) => { %>
-        <div class="border border-gray-800 rounded-xl overflow-hidden">
-          <button onclick="toggleFAQ(<%= index %>)" class="w-full flex justify-between items-center p-5 md:p-6 text-left hover:bg-white/5 transition-colors">
-            <span class="font-semibold text-white pr-4"><%= faq.q %></span>
-            <span id="faq-icon-<%= index %>" class="text-purple-400 text-2xl flex-shrink-0">+</span>
+          <h3 class="text-xs sm:text-sm font-semibold text-gray-300 uppercase tracking-wider mb-3">Partnership Ownership Program</h3>
+          <button
+            onclick="playVideo('VPn_GrCU')"
+            class="relative w-full rounded-xl overflow-hidden border border-gray-700 hover:border-purple-accent/60 transition-all group"
+            style="aspect-ratio: 9/16"
+          >
+            <img src="https://stream.adilo.com/adilo-encoding/zPbCyz5Mbfqv0HL2/VPn_GrCU/thumb/1080_2.jpg" alt="Partnership Ownership Program" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-purple-accent/80 group-hover:bg-purple-accent flex items-center justify-center transition-colors shadow-lg">
+                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
           </button>
-          <div id="faq-content-<%= index %>" class="hidden border-t border-gray-800 p-5 md:p-6 bg-white/[0.02]">
-            <p class="text-gray-400 leading-relaxed"><%= faq.a %></p>
-          </div>
         </div>
-        <% }); %>
+
+        <div class="text-center">
+          <h3 class="text-xs sm:text-sm font-semibold text-gray-300 uppercase tracking-wider mb-3">Five F's</h3>
+          <button
+            onclick="playVideo('3hI9C8Nv')"
+            class="relative w-full rounded-xl overflow-hidden border border-gray-700 hover:border-purple-accent/60 transition-all group"
+            style="aspect-ratio: 9/16"
+          >
+            <img src="https://stream.adilo.com/adilo-encoding/zPbCyz5Mbfqv0HL2/3hI9C8Nv/thumb/1080_2.jpg" alt="Five F's" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-purple-accent/80 group-hover:bg-purple-accent flex items-center justify-center transition-colors shadow-lg">
+                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </button>
+        </div>
+
+        <div class="text-center">
+          <h3 class="text-xs sm:text-sm font-semibold text-gray-300 uppercase tracking-wider mb-3">GFI Partners</h3>
+          <button
+            onclick="playVideo('waMOhLiV')"
+            class="relative w-full rounded-xl overflow-hidden border border-gray-700 hover:border-purple-accent/60 transition-all group"
+            style="aspect-ratio: 9/16"
+          >
+            <img src="https://stream.adilo.com/adilo-encoding/zPbCyz5Mbfqv0HL2/waMOhLiV/thumb/1080_2.jpg" alt="GFI Partners" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-purple-accent/80 group-hover:bg-purple-accent flex items-center justify-center transition-colors shadow-lg">
+                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </button>
+        </div>
+
+        <div class="text-center">
+          <h3 class="text-xs sm:text-sm font-semibold text-gray-300 uppercase tracking-wider mb-3">What is GFI</h3>
+          <button
+            onclick="playVideo('FuLyJw3w')"
+            class="relative w-full rounded-xl overflow-hidden border border-gray-700 hover:border-purple-accent/60 transition-all group"
+            style="aspect-ratio: 9/16"
+          >
+            <img src="https://stream.adilo.com/adilo-encoding/zPbCyz5Mbfqv0HL2/FuLyJw3w/thumb/1080_2.jpg" alt="What is GFI" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-purple-accent/80 group-hover:bg-purple-accent flex items-center justify-center transition-colors shadow-lg">
+                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </button>
+        </div>
+
+        <div class="text-center">
+          <h3 class="text-xs sm:text-sm font-semibold text-gray-300 uppercase tracking-wider mb-3">Athletes Division</h3>
+          <button
+            onclick="playVideo('Msnovdaz')"
+            class="relative w-full rounded-xl overflow-hidden border border-gray-700 hover:border-purple-accent/60 transition-all group"
+            style="aspect-ratio: 9/16"
+          >
+            <img src="https://stream.adilo.com/adilo-encoding/zPbCyz5Mbfqv0HL2/Msnovdaz/thumb/1080_2.jpg" alt="Athletes Division" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+              <div class="w-14 h-14 rounded-full bg-purple-accent/80 group-hover:bg-purple-accent flex items-center justify-center transition-colors shadow-lg">
+                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ════════ CTA ════════ -->
-  <section id="apply" class="py-20 md:py-28 px-6 bg-[#0d0d0d]">
-    <div class="max-w-3xl mx-auto text-center">
-      <span class="block text-sm font-semibold tracking-widest uppercase text-purple-400 mb-4">Ready to Start?</span>
-      <h2 class="text-3xl md:text-5xl font-bold mb-6">Your Future Starts Today</h2>
-      <p class="text-gray-400 text-lg mb-8">
-        Don't wait for the "perfect" time. The best time to build your financial services career is now. 
-        Apply today and take the first step toward financial freedom.
-      </p>
-      <a href="https://calendly.com/gary-cosby-jr/career-opportunity" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-600 hover:bg-purple-500 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-colors shadow-lg shadow-purple-600/20">
-        Schedule Your Interview
-      </a>
-    </div>
-  </section>
-
-  <!-- ════════ FOOTER ════════ -->
-  <footer class="border-t border-gray-800 py-12 px-6">
+  <!-- ════════ PROFESSIONAL OPPORTUNITY ════════ -->
+  <section class="py-20 md:py-28 px-4 md:px-8">
     <div class="max-w-6xl mx-auto">
       <div class="text-center">
-        <p class="text-lg font-bold mb-2 text-white">OOC Unlimited LLC</p>
-        <p class="text-zinc-500 text-sm italic mb-6">"Mission before commission."</p>
-        <p class="text-xs text-zinc-600">
-          © <%= new Date().getFullYear() %> OOC Unlimited LLC. All rights reserved.
-        </p>
+        <span class="block text-sm font-semibold tracking-widest uppercase text-purple-accent mb-4 text-center">Professional Opportunity</span>
+      </div>
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 text-center">GFI × Team OOC Career</h2>
+      <p class="text-gray-400 text-lg max-w-3xl mx-auto text-center mb-12">
+        Join a professional team representing 25+ of America's largest financial institutions with comprehensive training and ongoing support
+      </p>
+
+      <h3 class="text-2xl font-bold mb-8 text-center">Requirements &amp; Qualifications</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white/5 border border-gray-800 rounded-xl p-6 hover:border-purple-accent/50 transition-colors text-center">
+          <div class="text-purple-accent mx-auto mb-3 flex justify-center">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
+          </div>
+          <h4 class="text-white font-semibold mb-2">Age Requirement</h4>
+          <p class="text-gray-400 text-sm leading-relaxed">Must be 18 years or older to participate in this financial services opportunity and meet regulatory compliance standards.</p>
+        </div>
+
+        <div class="bg-white/5 border border-gray-800 rounded-xl p-6 hover:border-purple-accent/50 transition-colors text-center">
+          <div class="text-purple-accent mx-auto mb-3 flex justify-center">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>
+          </div>
+          <h4 class="text-white font-semibold mb-2">US Citizenship Required</h4>
+          <p class="text-gray-400 text-sm leading-relaxed">Must be a US citizen or permanent resident. Student visas and temporary work permits do not qualify for this position.</p>
+        </div>
+
+        <div class="bg-white/5 border border-gray-800 rounded-xl p-6 hover:border-purple-accent/50 transition-colors text-center">
+          <div class="text-purple-accent mx-auto mb-3 flex justify-center">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <h4 class="text-white font-semibold mb-2">Background Verification</h4>
+          <p class="text-gray-400 text-sm leading-relaxed">Must complete a background check. This requirement is non-negotiable for all positions.</p>
+        </div>
+
+        <div class="bg-white/5 border border-gray-800 rounded-xl p-6 hover:border-purple-accent/50 transition-colors text-center">
+          <div class="text-purple-accent mx-auto mb-3 flex justify-center">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <h4 class="text-white font-semibold mb-2">$199 to Get Started</h4>
+          <p class="text-gray-400 text-sm leading-relaxed">One-time platform investment required for qualified candidates. This small investment unlocks access to training, systems, and support worth 10x the cost.</p>
+        </div>
+
+        <div class="bg-white/5 border border-gray-800 rounded-xl p-6 hover:border-purple-accent/50 transition-colors text-center">
+          <div class="text-purple-accent mx-auto mb-3 flex justify-center">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>
+          </div>
+          <h4 class="text-white font-semibold mb-2">Independent Contractor Status</h4>
+          <p class="text-gray-400 text-sm leading-relaxed">Position structured as 1099 independent contractor with complete flexibility and autonomy in your work schedule.</p>
+        </div>
+
+        <div class="bg-white/5 border border-gray-800 rounded-xl p-6 hover:border-purple-accent/50 transition-colors text-center">
+          <div class="text-purple-accent mx-auto mb-3 flex justify-center">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>
+          </div>
+          <h4 class="text-white font-semibold mb-2">Remote Work Environment</h4>
+          <p class="text-gray-400 text-sm leading-relaxed">Work from your home with location independence and flexible scheduling to accommodate your lifestyle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ CTA / APPLICATION ════════ -->
+  <section id="cta" class="py-20 md:py-28 px-4 md:px-8 bg-[#0d0d0d]">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center">
+        <h2 class="text-3xl md:text-5xl font-bold mb-4 text-center">Ready to Begin?</h2>
+        <p class="text-gray-400 text-lg mb-12">Take the next step toward your financial services career</p>
+      </div>
+
+      <div class="max-w-2xl mx-auto">
+        <div class="bg-white/5 border border-gray-800 rounded-2xl p-8 md:p-10">
+          <h3 class="text-xl font-bold text-white mb-8 text-center">Application Process</h3>
+          <ol class="space-y-6">
+            <li class="flex items-start gap-4">
+              <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-purple-accent text-white text-sm font-bold flex-shrink-0 mt-0.5">1</span>
+              <span class="text-gray-300 text-sm leading-relaxed pt-1.5">Watch the company overview video above to understand our opportunity</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-purple-accent text-white text-sm font-bold flex-shrink-0 mt-0.5">2</span>
+              <span class="text-gray-300 text-sm leading-relaxed pt-1.5">Review all requirements and ensure you qualify</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-purple-accent text-white text-sm font-bold flex-shrink-0 mt-0.5">3</span>
+              <span class="text-gray-300 text-sm leading-relaxed pt-1.5">Contact the representative who shared this opportunity</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-purple-accent text-white text-sm font-bold flex-shrink-0 mt-0.5">4</span>
+              <span class="text-gray-300 text-sm leading-relaxed pt-1.5">Schedule your interview to discuss next steps</span>
+            </li>
+          </ol>
+
+          <div class="mt-8 bg-purple-accent/20 border border-purple-accent/30 rounded-xl p-5">
+            <p class="text-gray-300 text-sm leading-relaxed">
+              <span class="text-purple-accent font-bold">Important:</span> Contact the representative who shared this opportunity with you to schedule your interview. They will guide you through the application process and answer any questions you may have.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ STICKY FLOATING BUTTONS ════════ -->
+  <div id="stickyButtons" class="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-3 hidden">
+    <button
+      onclick="document.getElementById('cta').scrollIntoView({ behavior: 'smooth' })"
+      class="bg-purple-accent hover:bg-purple-700 text-white font-bold px-5 py-3 rounded-full shadow-lg shadow-purple-accent/30 transition-all hover:scale-105 text-sm"
+    >
+      Apply Now
+    </button>
+    <button
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      class="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white flex items-center justify-center shadow-lg transition-all hover:scale-110"
+    >
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- ════════ FOOTER / DISCLAIMER ════════ -->
+  <footer class="border-t border-gray-800 py-12 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h4 class="text-white font-semibold mb-4">Income Disclaimer</h4>
+      <p class="text-gray-500 text-sm leading-relaxed">
+        Important: Income representations are aspirational statements only. Success depends on individual skills, effort, time investment, and market conditions. Examples shown are not promises or guarantees of earnings. Your success depends entirely on your effort, dedication, and market factors. This is not a "get rich quick" scheme — results require consistent work and professional commitment.
+      </p>
+      <div class="mt-8 text-gray-600 text-xs">
+        © <%= new Date().getFullYear() %> GFI × Team OOC. All rights reserved.
       </div>
     </div>
   </footer>
 </div>
 
 <script>
-function toggleFAQ(index) {
-  const content = document.getElementById(`faq-content-${index}`);
-  const icon = document.getElementById(`faq-icon-${index}`);
-  
-  if (content.classList.contains('hidden')) {
-    content.classList.remove('hidden');
-    icon.textContent = '−';
-  } else {
-    content.classList.add('hidden');
-    icon.textContent = '+';
-  }
+function playVideo(videoId) {
+  const modal = document.getElementById('videoModal');
+  const player = document.getElementById('videoPlayer');
+  player.src = `https://adilo.bigcommand.com/watch/${videoId}`;
+  modal.classList.remove('hidden');
+  modal.focus();
 }
+
+function closeVideo() {
+  const modal = document.getElementById('videoModal');
+  const player = document.getElementById('videoPlayer');
+  player.src = '';
+  modal.classList.add('hidden');
+}
+
+// Close video on escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeVideo();
+  }
+});
+
+// Close video when clicking outside
+document.getElementById('videoModal').addEventListener('click', function(e) {
+  if (e.target === this) {
+    closeVideo();
+  }
+});
+
+// Show/hide sticky buttons on scroll
+window.addEventListener('scroll', function() {
+  const stickyButtons = document.getElementById('stickyButtons');
+  if (window.scrollY > 400) {
+    stickyButtons.classList.remove('hidden');
+  } else {
+    stickyButtons.classList.add('hidden');
+  }
+});
 </script>
 
 </body>
