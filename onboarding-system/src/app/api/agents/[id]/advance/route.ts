@@ -3,8 +3,8 @@ import db from '@/lib/db';
 import { getStageName } from '@/lib/stages';
 
 // POST advance agent to next stage
-export async function POST(req: NextRequest, { params }: { params: { id: string } }) {
-  const { id } = params;
+export async function POST(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
   const body = await req.json().catch(() => ({}));
   const agent = db.prepare('SELECT * FROM agents WHERE id = ?').get(id) as Record<string, unknown> | undefined;
   if (!agent) return NextResponse.json({ error: 'Not found' }, { status: 404 });

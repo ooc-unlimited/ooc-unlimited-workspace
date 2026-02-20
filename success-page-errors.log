@@ -1,0 +1,500 @@
+❌ Test 1: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/168
+API URL: http://localhost:3001/api/grand-opening/events/168
+Success Response: /login
+API Response: {"id":168,"agent_name":"Success Test Agent 1","agent_phone":"555-0001","agent_email":"successtest1@example.com","agent_story":"Test story for success page test 1","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest1","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:51","updated_at":"2026-02-19 22:00:51"}
+❌ Test 2: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/169
+API URL: http://localhost:3001/api/grand-opening/events/169
+Success Response: /login
+API Response: {"id":169,"agent_name":"Success Test Agent 2","agent_phone":"555-0002","agent_email":"successtest2@example.com","agent_story":"Test story for success page test 2","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest2","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:51","updated_at":"2026-02-19 22:00:51"}
+❌ Test 3: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/170
+API URL: http://localhost:3001/api/grand-opening/events/170
+Success Response: /login
+API Response: {"id":170,"agent_name":"Success Test Agent 3","agent_phone":"555-0003","agent_email":"successtest3@example.com","agent_story":"Test story for success page test 3","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest3","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:51","updated_at":"2026-02-19 22:00:51"}
+❌ Test 4: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/171
+API URL: http://localhost:3001/api/grand-opening/events/171
+Success Response: /login
+API Response: {"id":171,"agent_name":"Success Test Agent 4","agent_phone":"555-0004","agent_email":"successtest4@example.com","agent_story":"Test story for success page test 4","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest4","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:51","updated_at":"2026-02-19 22:00:51"}
+❌ Test 5: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/172
+API URL: http://localhost:3001/api/grand-opening/events/172
+Success Response: /login
+API Response: {"id":172,"agent_name":"Success Test Agent 5","agent_phone":"555-0005","agent_email":"successtest5@example.com","agent_story":"Test story for success page test 5","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest5","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:52","updated_at":"2026-02-19 22:00:52"}
+❌ Test 6: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/173
+API URL: http://localhost:3001/api/grand-opening/events/173
+Success Response: /login
+API Response: {"id":173,"agent_name":"Success Test Agent 6","agent_phone":"555-0006","agent_email":"successtest6@example.com","agent_story":"Test story for success page test 6","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest6","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:52","updated_at":"2026-02-19 22:00:52"}
+❌ Test 7: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/174
+API URL: http://localhost:3001/api/grand-opening/events/174
+Success Response: /login
+API Response: {"id":174,"agent_name":"Success Test Agent 7","agent_phone":"555-0007","agent_email":"successtest7@example.com","agent_story":"Test story for success page test 7","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest7","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:52","updated_at":"2026-02-19 22:00:52"}
+❌ Test 8: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/175
+API URL: http://localhost:3001/api/grand-opening/events/175
+Success Response: /login
+API Response: {"id":175,"agent_name":"Success Test Agent 8","agent_phone":"555-0008","agent_email":"successtest8@example.com","agent_story":"Test story for success page test 8","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest8","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:52","updated_at":"2026-02-19 22:00:52"}
+❌ Test 9: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/176
+API URL: http://localhost:3001/api/grand-opening/events/176
+Success Response: /login
+API Response: {"id":176,"agent_name":"Success Test Agent 9","agent_phone":"555-0009","agent_email":"successtest9@example.com","agent_story":"Test story for success page test 9","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest9","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:52","updated_at":"2026-02-19 22:00:52"}
+❌ Test 10: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/177
+API URL: http://localhost:3001/api/grand-opening/events/177
+Success Response: /login
+API Response: {"id":177,"agent_name":"Success Test Agent 10","agent_phone":"555-0010","agent_email":"successtest10@example.com","agent_story":"Test story for success page test 10","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest10","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:52","updated_at":"2026-02-19 22:00:52"}
+❌ Test 11: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/178
+API URL: http://localhost:3001/api/grand-opening/events/178
+Success Response: /login
+API Response: {"id":178,"agent_name":"Success Test Agent 11","agent_phone":"555-0011","agent_email":"successtest11@example.com","agent_story":"Test story for success page test 11","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest11","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:52","updated_at":"2026-02-19 22:00:52"}
+❌ Test 12: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/179
+API URL: http://localhost:3001/api/grand-opening/events/179
+Success Response: /login
+API Response: {"id":179,"agent_name":"Success Test Agent 12","agent_phone":"555-0012","agent_email":"successtest12@example.com","agent_story":"Test story for success page test 12","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest12","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:52","updated_at":"2026-02-19 22:00:52"}
+❌ Test 13: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/180
+API URL: http://localhost:3001/api/grand-opening/events/180
+Success Response: /login
+API Response: {"id":180,"agent_name":"Success Test Agent 13","agent_phone":"555-0013","agent_email":"successtest13@example.com","agent_story":"Test story for success page test 13","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest13","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:52","updated_at":"2026-02-19 22:00:52"}
+❌ Test 14: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/181
+API URL: http://localhost:3001/api/grand-opening/events/181
+Success Response: /login
+API Response: {"id":181,"agent_name":"Success Test Agent 14","agent_phone":"555-0014","agent_email":"successtest14@example.com","agent_story":"Test story for success page test 14","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest14","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:52","updated_at":"2026-02-19 22:00:52"}
+❌ Test 15: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/182
+API URL: http://localhost:3001/api/grand-opening/events/182
+Success Response: /login
+API Response: {"id":182,"agent_name":"Success Test Agent 15","agent_phone":"555-0015","agent_email":"successtest15@example.com","agent_story":"Test story for success page test 15","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest15","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:52","updated_at":"2026-02-19 22:00:52"}
+❌ Test 16: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/183
+API URL: http://localhost:3001/api/grand-opening/events/183
+Success Response: /login
+API Response: {"id":183,"agent_name":"Success Test Agent 16","agent_phone":"555-0016","agent_email":"successtest16@example.com","agent_story":"Test story for success page test 16","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest16","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:53","updated_at":"2026-02-19 22:00:53"}
+❌ Test 17: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/184
+API URL: http://localhost:3001/api/grand-opening/events/184
+Success Response: /login
+API Response: {"id":184,"agent_name":"Success Test Agent 17","agent_phone":"555-0017","agent_email":"successtest17@example.com","agent_story":"Test story for success page test 17","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest17","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:53","updated_at":"2026-02-19 22:00:53"}
+❌ Test 18: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/185
+API URL: http://localhost:3001/api/grand-opening/events/185
+Success Response: /login
+API Response: {"id":185,"agent_name":"Success Test Agent 18","agent_phone":"555-0018","agent_email":"successtest18@example.com","agent_story":"Test story for success page test 18","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest18","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:53","updated_at":"2026-02-19 22:00:53"}
+❌ Test 19: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/186
+API URL: http://localhost:3001/api/grand-opening/events/186
+Success Response: /login
+API Response: {"id":186,"agent_name":"Success Test Agent 19","agent_phone":"555-0019","agent_email":"successtest19@example.com","agent_story":"Test story for success page test 19","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest19","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:53","updated_at":"2026-02-19 22:00:53"}
+❌ Test 20: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/187
+API URL: http://localhost:3001/api/grand-opening/events/187
+Success Response: /login
+API Response: {"id":187,"agent_name":"Success Test Agent 20","agent_phone":"555-0020","agent_email":"successtest20@example.com","agent_story":"Test story for success page test 20","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest20","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:53","updated_at":"2026-02-19 22:00:53"}
+❌ Test 21: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/188
+API URL: http://localhost:3001/api/grand-opening/events/188
+Success Response: /login
+API Response: {"id":188,"agent_name":"Success Test Agent 21","agent_phone":"555-0021","agent_email":"successtest21@example.com","agent_story":"Test story for success page test 21","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest21","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:53","updated_at":"2026-02-19 22:00:53"}
+❌ Test 22: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/189
+API URL: http://localhost:3001/api/grand-opening/events/189
+Success Response: /login
+API Response: {"id":189,"agent_name":"Success Test Agent 22","agent_phone":"555-0022","agent_email":"successtest22@example.com","agent_story":"Test story for success page test 22","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest22","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:53","updated_at":"2026-02-19 22:00:53"}
+❌ Test 23: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/190
+API URL: http://localhost:3001/api/grand-opening/events/190
+Success Response: /login
+API Response: {"id":190,"agent_name":"Success Test Agent 23","agent_phone":"555-0023","agent_email":"successtest23@example.com","agent_story":"Test story for success page test 23","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest23","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:53","updated_at":"2026-02-19 22:00:53"}
+❌ Test 24: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/191
+API URL: http://localhost:3001/api/grand-opening/events/191
+Success Response: /login
+API Response: {"id":191,"agent_name":"Success Test Agent 24","agent_phone":"555-0024","agent_email":"successtest24@example.com","agent_story":"Test story for success page test 24","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest24","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:53","updated_at":"2026-02-19 22:00:53"}
+❌ Test 25: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/192
+API URL: http://localhost:3001/api/grand-opening/events/192
+Success Response: /login
+API Response: {"id":192,"agent_name":"Success Test Agent 25","agent_phone":"555-0025","agent_email":"successtest25@example.com","agent_story":"Test story for success page test 25","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest25","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:53","updated_at":"2026-02-19 22:00:53"}
+❌ Test 26: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/193
+API URL: http://localhost:3001/api/grand-opening/events/193
+Success Response: /login
+API Response: {"id":193,"agent_name":"Success Test Agent 26","agent_phone":"555-0026","agent_email":"successtest26@example.com","agent_story":"Test story for success page test 26","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest26","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:53","updated_at":"2026-02-19 22:00:53"}
+❌ Test 27: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/194
+API URL: http://localhost:3001/api/grand-opening/events/194
+Success Response: /login
+API Response: {"id":194,"agent_name":"Success Test Agent 27","agent_phone":"555-0027","agent_email":"successtest27@example.com","agent_story":"Test story for success page test 27","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest27","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:54","updated_at":"2026-02-19 22:00:54"}
+❌ Test 28: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/195
+API URL: http://localhost:3001/api/grand-opening/events/195
+Success Response: /login
+API Response: {"id":195,"agent_name":"Success Test Agent 28","agent_phone":"555-0028","agent_email":"successtest28@example.com","agent_story":"Test story for success page test 28","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest28","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:54","updated_at":"2026-02-19 22:00:54"}
+❌ Test 29: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/196
+API URL: http://localhost:3001/api/grand-opening/events/196
+Success Response: /login
+API Response: {"id":196,"agent_name":"Success Test Agent 29","agent_phone":"555-0029","agent_email":"successtest29@example.com","agent_story":"Test story for success page test 29","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest29","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:54","updated_at":"2026-02-19 22:00:54"}
+❌ Test 30: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/197
+API URL: http://localhost:3001/api/grand-opening/events/197
+Success Response: /login
+API Response: {"id":197,"agent_name":"Success Test Agent 30","agent_phone":"555-0030","agent_email":"successtest30@example.com","agent_story":"Test story for success page test 30","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest30","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:54","updated_at":"2026-02-19 22:00:54"}
+❌ Test 31: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/198
+API URL: http://localhost:3001/api/grand-opening/events/198
+Success Response: /login
+API Response: {"id":198,"agent_name":"Success Test Agent 31","agent_phone":"555-0031","agent_email":"successtest31@example.com","agent_story":"Test story for success page test 31","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest31","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:54","updated_at":"2026-02-19 22:00:54"}
+❌ Test 32: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/199
+API URL: http://localhost:3001/api/grand-opening/events/199
+Success Response: /login
+API Response: {"id":199,"agent_name":"Success Test Agent 32","agent_phone":"555-0032","agent_email":"successtest32@example.com","agent_story":"Test story for success page test 32","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest32","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:54","updated_at":"2026-02-19 22:00:54"}
+❌ Test 33: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/200
+API URL: http://localhost:3001/api/grand-opening/events/200
+Success Response: /login
+API Response: {"id":200,"agent_name":"Success Test Agent 33","agent_phone":"555-0033","agent_email":"successtest33@example.com","agent_story":"Test story for success page test 33","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest33","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:54","updated_at":"2026-02-19 22:00:54"}
+❌ Test 34: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/201
+API URL: http://localhost:3001/api/grand-opening/events/201
+Success Response: /login
+API Response: {"id":201,"agent_name":"Success Test Agent 34","agent_phone":"555-0034","agent_email":"successtest34@example.com","agent_story":"Test story for success page test 34","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest34","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:54","updated_at":"2026-02-19 22:00:54"}
+❌ Test 35: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/202
+API URL: http://localhost:3001/api/grand-opening/events/202
+Success Response: /login
+API Response: {"id":202,"agent_name":"Success Test Agent 35","agent_phone":"555-0035","agent_email":"successtest35@example.com","agent_story":"Test story for success page test 35","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest35","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:54","updated_at":"2026-02-19 22:00:54"}
+❌ Test 36: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/203
+API URL: http://localhost:3001/api/grand-opening/events/203
+Success Response: /login
+API Response: {"id":203,"agent_name":"Success Test Agent 36","agent_phone":"555-0036","agent_email":"successtest36@example.com","agent_story":"Test story for success page test 36","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest36","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:54","updated_at":"2026-02-19 22:00:54"}
+❌ Test 37: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/204
+API URL: http://localhost:3001/api/grand-opening/events/204
+Success Response: /login
+API Response: {"id":204,"agent_name":"Success Test Agent 37","agent_phone":"555-0037","agent_email":"successtest37@example.com","agent_story":"Test story for success page test 37","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest37","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:54","updated_at":"2026-02-19 22:00:54"}
+❌ Test 38: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/205
+API URL: http://localhost:3001/api/grand-opening/events/205
+Success Response: /login
+API Response: {"id":205,"agent_name":"Success Test Agent 38","agent_phone":"555-0038","agent_email":"successtest38@example.com","agent_story":"Test story for success page test 38","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest38","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:54","updated_at":"2026-02-19 22:00:54"}
+❌ Test 39: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/206
+API URL: http://localhost:3001/api/grand-opening/events/206
+Success Response: /login
+API Response: {"id":206,"agent_name":"Success Test Agent 39","agent_phone":"555-0039","agent_email":"successtest39@example.com","agent_story":"Test story for success page test 39","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest39","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:54","updated_at":"2026-02-19 22:00:54"}
+❌ Test 40: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/207
+API URL: http://localhost:3001/api/grand-opening/events/207
+Success Response: /login
+API Response: {"id":207,"agent_name":"Success Test Agent 40","agent_phone":"555-0040","agent_email":"successtest40@example.com","agent_story":"Test story for success page test 40","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest40","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:54","updated_at":"2026-02-19 22:00:54"}
+❌ Test 41: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/208
+API URL: http://localhost:3001/api/grand-opening/events/208
+Success Response: /login
+API Response: {"id":208,"agent_name":"Success Test Agent 41","agent_phone":"555-0041","agent_email":"successtest41@example.com","agent_story":"Test story for success page test 41","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest41","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:55","updated_at":"2026-02-19 22:00:55"}
+❌ Test 42: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/209
+API URL: http://localhost:3001/api/grand-opening/events/209
+Success Response: /login
+API Response: {"id":209,"agent_name":"Success Test Agent 42","agent_phone":"555-0042","agent_email":"successtest42@example.com","agent_story":"Test story for success page test 42","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest42","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:55","updated_at":"2026-02-19 22:00:55"}
+❌ Test 43: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/210
+API URL: http://localhost:3001/api/grand-opening/events/210
+Success Response: /login
+API Response: {"id":210,"agent_name":"Success Test Agent 43","agent_phone":"555-0043","agent_email":"successtest43@example.com","agent_story":"Test story for success page test 43","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest43","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:55","updated_at":"2026-02-19 22:00:55"}
+❌ Test 44: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/211
+API URL: http://localhost:3001/api/grand-opening/events/211
+Success Response: /login
+API Response: {"id":211,"agent_name":"Success Test Agent 44","agent_phone":"555-0044","agent_email":"successtest44@example.com","agent_story":"Test story for success page test 44","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest44","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:55","updated_at":"2026-02-19 22:00:55"}
+❌ Test 45: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/212
+API URL: http://localhost:3001/api/grand-opening/events/212
+Success Response: /login
+API Response: {"id":212,"agent_name":"Success Test Agent 45","agent_phone":"555-0045","agent_email":"successtest45@example.com","agent_story":"Test story for success page test 45","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest45","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:55","updated_at":"2026-02-19 22:00:55"}
+❌ Test 46: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/213
+API URL: http://localhost:3001/api/grand-opening/events/213
+Success Response: /login
+API Response: {"id":213,"agent_name":"Success Test Agent 46","agent_phone":"555-0046","agent_email":"successtest46@example.com","agent_story":"Test story for success page test 46","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest46","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:55","updated_at":"2026-02-19 22:00:55"}
+❌ Test 47: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/214
+API URL: http://localhost:3001/api/grand-opening/events/214
+Success Response: /login
+API Response: {"id":214,"agent_name":"Success Test Agent 47","agent_phone":"555-0047","agent_email":"successtest47@example.com","agent_story":"Test story for success page test 47","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest47","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:55","updated_at":"2026-02-19 22:00:55"}
+❌ Test 48: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/215
+API URL: http://localhost:3001/api/grand-opening/events/215
+Success Response: /login
+API Response: {"id":215,"agent_name":"Success Test Agent 48","agent_phone":"555-0048","agent_email":"successtest48@example.com","agent_story":"Test story for success page test 48","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest48","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:55","updated_at":"2026-02-19 22:00:55"}
+❌ Test 49: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/216
+API URL: http://localhost:3001/api/grand-opening/events/216
+Success Response: /login
+API Response: {"id":216,"agent_name":"Success Test Agent 49","agent_phone":"555-0049","agent_email":"successtest49@example.com","agent_story":"Test story for success page test 49","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest49","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:55","updated_at":"2026-02-19 22:00:55"}
+❌ Test 50: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/217
+API URL: http://localhost:3001/api/grand-opening/events/217
+Success Response: /login
+API Response: {"id":217,"agent_name":"Success Test Agent 50","agent_phone":"555-0050","agent_email":"successtest50@example.com","agent_story":"Test story for success page test 50","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest50","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:55","updated_at":"2026-02-19 22:00:55"}
+❌ Test 51: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/218
+API URL: http://localhost:3001/api/grand-opening/events/218
+Success Response: /login
+API Response: {"id":218,"agent_name":"Success Test Agent 51","agent_phone":"555-0051","agent_email":"successtest51@example.com","agent_story":"Test story for success page test 51","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest51","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:55","updated_at":"2026-02-19 22:00:55"}
+❌ Test 52: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/219
+API URL: http://localhost:3001/api/grand-opening/events/219
+Success Response: /login
+API Response: {"id":219,"agent_name":"Success Test Agent 52","agent_phone":"555-0052","agent_email":"successtest52@example.com","agent_story":"Test story for success page test 52","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest52","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:55","updated_at":"2026-02-19 22:00:55"}
+❌ Test 53: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/220
+API URL: http://localhost:3001/api/grand-opening/events/220
+Success Response: /login
+API Response: {"id":220,"agent_name":"Success Test Agent 53","agent_phone":"555-0053","agent_email":"successtest53@example.com","agent_story":"Test story for success page test 53","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest53","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:55","updated_at":"2026-02-19 22:00:55"}
+❌ Test 54: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/221
+API URL: http://localhost:3001/api/grand-opening/events/221
+Success Response: /login
+API Response: {"id":221,"agent_name":"Success Test Agent 54","agent_phone":"555-0054","agent_email":"successtest54@example.com","agent_story":"Test story for success page test 54","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest54","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:55","updated_at":"2026-02-19 22:00:55"}
+❌ Test 55: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/222
+API URL: http://localhost:3001/api/grand-opening/events/222
+Success Response: /login
+API Response: {"id":222,"agent_name":"Success Test Agent 55","agent_phone":"555-0055","agent_email":"successtest55@example.com","agent_story":"Test story for success page test 55","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest55","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:55","updated_at":"2026-02-19 22:00:55"}
+❌ Test 56: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/223
+API URL: http://localhost:3001/api/grand-opening/events/223
+Success Response: /login
+API Response: {"id":223,"agent_name":"Success Test Agent 56","agent_phone":"555-0056","agent_email":"successtest56@example.com","agent_story":"Test story for success page test 56","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest56","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:56","updated_at":"2026-02-19 22:00:56"}
+❌ Test 57: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/224
+API URL: http://localhost:3001/api/grand-opening/events/224
+Success Response: /login
+API Response: {"id":224,"agent_name":"Success Test Agent 57","agent_phone":"555-0057","agent_email":"successtest57@example.com","agent_story":"Test story for success page test 57","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest57","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:56","updated_at":"2026-02-19 22:00:56"}
+❌ Test 58: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/225
+API URL: http://localhost:3001/api/grand-opening/events/225
+Success Response: /login
+API Response: {"id":225,"agent_name":"Success Test Agent 58","agent_phone":"555-0058","agent_email":"successtest58@example.com","agent_story":"Test story for success page test 58","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest58","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:56","updated_at":"2026-02-19 22:00:56"}
+❌ Test 59: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/226
+API URL: http://localhost:3001/api/grand-opening/events/226
+Success Response: /login
+API Response: {"id":226,"agent_name":"Success Test Agent 59","agent_phone":"555-0059","agent_email":"successtest59@example.com","agent_story":"Test story for success page test 59","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest59","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:56","updated_at":"2026-02-19 22:00:56"}
+❌ Test 60: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/227
+API URL: http://localhost:3001/api/grand-opening/events/227
+Success Response: /login
+API Response: {"id":227,"agent_name":"Success Test Agent 60","agent_phone":"555-0060","agent_email":"successtest60@example.com","agent_story":"Test story for success page test 60","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest60","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:56","updated_at":"2026-02-19 22:00:56"}
+❌ Test 61: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/228
+API URL: http://localhost:3001/api/grand-opening/events/228
+Success Response: /login
+API Response: {"id":228,"agent_name":"Success Test Agent 61","agent_phone":"555-0061","agent_email":"successtest61@example.com","agent_story":"Test story for success page test 61","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest61","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:56","updated_at":"2026-02-19 22:00:56"}
+❌ Test 62: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/229
+API URL: http://localhost:3001/api/grand-opening/events/229
+Success Response: /login
+API Response: {"id":229,"agent_name":"Success Test Agent 62","agent_phone":"555-0062","agent_email":"successtest62@example.com","agent_story":"Test story for success page test 62","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest62","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:56","updated_at":"2026-02-19 22:00:56"}
+❌ Test 63: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/230
+API URL: http://localhost:3001/api/grand-opening/events/230
+Success Response: /login
+API Response: {"id":230,"agent_name":"Success Test Agent 63","agent_phone":"555-0063","agent_email":"successtest63@example.com","agent_story":"Test story for success page test 63","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest63","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:56","updated_at":"2026-02-19 22:00:56"}
+❌ Test 64: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/231
+API URL: http://localhost:3001/api/grand-opening/events/231
+Success Response: /login
+API Response: {"id":231,"agent_name":"Success Test Agent 64","agent_phone":"555-0064","agent_email":"successtest64@example.com","agent_story":"Test story for success page test 64","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest64","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:56","updated_at":"2026-02-19 22:00:56"}
+❌ Test 65: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/232
+API URL: http://localhost:3001/api/grand-opening/events/232
+Success Response: /login
+API Response: {"id":232,"agent_name":"Success Test Agent 65","agent_phone":"555-0065","agent_email":"successtest65@example.com","agent_story":"Test story for success page test 65","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest65","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:56","updated_at":"2026-02-19 22:00:56"}
+❌ Test 66: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/233
+API URL: http://localhost:3001/api/grand-opening/events/233
+Success Response: /login
+API Response: {"id":233,"agent_name":"Success Test Agent 66","agent_phone":"555-0066","agent_email":"successtest66@example.com","agent_story":"Test story for success page test 66","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest66","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:57","updated_at":"2026-02-19 22:00:57"}
+❌ Test 67: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/234
+API URL: http://localhost:3001/api/grand-opening/events/234
+Success Response: /login
+API Response: {"id":234,"agent_name":"Success Test Agent 67","agent_phone":"555-0067","agent_email":"successtest67@example.com","agent_story":"Test story for success page test 67","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest67","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:57","updated_at":"2026-02-19 22:00:57"}
+❌ Test 68: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/235
+API URL: http://localhost:3001/api/grand-opening/events/235
+Success Response: /login
+API Response: {"id":235,"agent_name":"Success Test Agent 68","agent_phone":"555-0068","agent_email":"successtest68@example.com","agent_story":"Test story for success page test 68","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest68","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:57","updated_at":"2026-02-19 22:00:57"}
+❌ Test 69: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/236
+API URL: http://localhost:3001/api/grand-opening/events/236
+Success Response: /login
+API Response: {"id":236,"agent_name":"Success Test Agent 69","agent_phone":"555-0069","agent_email":"successtest69@example.com","agent_story":"Test story for success page test 69","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest69","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:57","updated_at":"2026-02-19 22:00:57"}
+❌ Test 70: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/237
+API URL: http://localhost:3001/api/grand-opening/events/237
+Success Response: /login
+API Response: {"id":237,"agent_name":"Success Test Agent 70","agent_phone":"555-0070","agent_email":"successtest70@example.com","agent_story":"Test story for success page test 70","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest70","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:57","updated_at":"2026-02-19 22:00:57"}
+❌ Test 71: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/238
+API URL: http://localhost:3001/api/grand-opening/events/238
+Success Response: /login
+API Response: {"id":238,"agent_name":"Success Test Agent 71","agent_phone":"555-0071","agent_email":"successtest71@example.com","agent_story":"Test story for success page test 71","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest71","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:57","updated_at":"2026-02-19 22:00:57"}
+❌ Test 72: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/239
+API URL: http://localhost:3001/api/grand-opening/events/239
+Success Response: /login
+API Response: {"id":239,"agent_name":"Success Test Agent 72","agent_phone":"555-0072","agent_email":"successtest72@example.com","agent_story":"Test story for success page test 72","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest72","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:57","updated_at":"2026-02-19 22:00:57"}
+❌ Test 73: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/240
+API URL: http://localhost:3001/api/grand-opening/events/240
+Success Response: /login
+API Response: {"id":240,"agent_name":"Success Test Agent 73","agent_phone":"555-0073","agent_email":"successtest73@example.com","agent_story":"Test story for success page test 73","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest73","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:57","updated_at":"2026-02-19 22:00:57"}
+❌ Test 74: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/241
+API URL: http://localhost:3001/api/grand-opening/events/241
+Success Response: /login
+API Response: {"id":241,"agent_name":"Success Test Agent 74","agent_phone":"555-0074","agent_email":"successtest74@example.com","agent_story":"Test story for success page test 74","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest74","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:57","updated_at":"2026-02-19 22:00:57"}
+❌ Test 75: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/242
+API URL: http://localhost:3001/api/grand-opening/events/242
+Success Response: /login
+API Response: {"id":242,"agent_name":"Success Test Agent 75","agent_phone":"555-0075","agent_email":"successtest75@example.com","agent_story":"Test story for success page test 75","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest75","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:57","updated_at":"2026-02-19 22:00:57"}
+❌ Test 76: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/243
+API URL: http://localhost:3001/api/grand-opening/events/243
+Success Response: /login
+API Response: {"id":243,"agent_name":"Success Test Agent 76","agent_phone":"555-0076","agent_email":"successtest76@example.com","agent_story":"Test story for success page test 76","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest76","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:57","updated_at":"2026-02-19 22:00:57"}
+❌ Test 77: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/244
+API URL: http://localhost:3001/api/grand-opening/events/244
+Success Response: /login
+API Response: {"id":244,"agent_name":"Success Test Agent 77","agent_phone":"555-0077","agent_email":"successtest77@example.com","agent_story":"Test story for success page test 77","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest77","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:57","updated_at":"2026-02-19 22:00:57"}
+❌ Test 78: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/245
+API URL: http://localhost:3001/api/grand-opening/events/245
+Success Response: /login
+API Response: {"id":245,"agent_name":"Success Test Agent 78","agent_phone":"555-0078","agent_email":"successtest78@example.com","agent_story":"Test story for success page test 78","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest78","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:58","updated_at":"2026-02-19 22:00:58"}
+❌ Test 79: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/246
+API URL: http://localhost:3001/api/grand-opening/events/246
+Success Response: /login
+API Response: {"id":246,"agent_name":"Success Test Agent 79","agent_phone":"555-0079","agent_email":"successtest79@example.com","agent_story":"Test story for success page test 79","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest79","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:58","updated_at":"2026-02-19 22:00:58"}
+❌ Test 80: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/247
+API URL: http://localhost:3001/api/grand-opening/events/247
+Success Response: /login
+API Response: {"id":247,"agent_name":"Success Test Agent 80","agent_phone":"555-0080","agent_email":"successtest80@example.com","agent_story":"Test story for success page test 80","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest80","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:58","updated_at":"2026-02-19 22:00:58"}
+❌ Test 81: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/248
+API URL: http://localhost:3001/api/grand-opening/events/248
+Success Response: /login
+API Response: {"id":248,"agent_name":"Success Test Agent 81","agent_phone":"555-0081","agent_email":"successtest81@example.com","agent_story":"Test story for success page test 81","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest81","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:58","updated_at":"2026-02-19 22:00:58"}
+❌ Test 82: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/249
+API URL: http://localhost:3001/api/grand-opening/events/249
+Success Response: /login
+API Response: {"id":249,"agent_name":"Success Test Agent 82","agent_phone":"555-0082","agent_email":"successtest82@example.com","agent_story":"Test story for success page test 82","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest82","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:58","updated_at":"2026-02-19 22:00:58"}
+❌ Test 83: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/250
+API URL: http://localhost:3001/api/grand-opening/events/250
+Success Response: /login
+API Response: {"id":250,"agent_name":"Success Test Agent 83","agent_phone":"555-0083","agent_email":"successtest83@example.com","agent_story":"Test story for success page test 83","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest83","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:58","updated_at":"2026-02-19 22:00:58"}
+❌ Test 84: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/251
+API URL: http://localhost:3001/api/grand-opening/events/251
+Success Response: /login
+API Response: {"id":251,"agent_name":"Success Test Agent 84","agent_phone":"555-0084","agent_email":"successtest84@example.com","agent_story":"Test story for success page test 84","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest84","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:58","updated_at":"2026-02-19 22:00:58"}
+❌ Test 85: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/252
+API URL: http://localhost:3001/api/grand-opening/events/252
+Success Response: /login
+API Response: {"id":252,"agent_name":"Success Test Agent 85","agent_phone":"555-0085","agent_email":"successtest85@example.com","agent_story":"Test story for success page test 85","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest85","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:58","updated_at":"2026-02-19 22:00:58"}
+❌ Test 86: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/253
+API URL: http://localhost:3001/api/grand-opening/events/253
+Success Response: /login
+API Response: {"id":253,"agent_name":"Success Test Agent 86","agent_phone":"555-0086","agent_email":"successtest86@example.com","agent_story":"Test story for success page test 86","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest86","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:58","updated_at":"2026-02-19 22:00:58"}
+❌ Test 87: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/254
+API URL: http://localhost:3001/api/grand-opening/events/254
+Success Response: /login
+API Response: {"id":254,"agent_name":"Success Test Agent 87","agent_phone":"555-0087","agent_email":"successtest87@example.com","agent_story":"Test story for success page test 87","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest87","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:58","updated_at":"2026-02-19 22:00:58"}
+❌ Test 88: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/255
+API URL: http://localhost:3001/api/grand-opening/events/255
+Success Response: /login
+API Response: {"id":255,"agent_name":"Success Test Agent 88","agent_phone":"555-0088","agent_email":"successtest88@example.com","agent_story":"Test story for success page test 88","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest88","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:58","updated_at":"2026-02-19 22:00:58"}
+❌ Test 89: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/256
+API URL: http://localhost:3001/api/grand-opening/events/256
+Success Response: /login
+API Response: {"id":256,"agent_name":"Success Test Agent 89","agent_phone":"555-0089","agent_email":"successtest89@example.com","agent_story":"Test story for success page test 89","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest89","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:58","updated_at":"2026-02-19 22:00:58"}
+❌ Test 90: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/257
+API URL: http://localhost:3001/api/grand-opening/events/257
+Success Response: /login
+API Response: {"id":257,"agent_name":"Success Test Agent 90","agent_phone":"555-0090","agent_email":"successtest90@example.com","agent_story":"Test story for success page test 90","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest90","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:58","updated_at":"2026-02-19 22:00:58"}
+❌ Test 91: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/258
+API URL: http://localhost:3001/api/grand-opening/events/258
+Success Response: /login
+API Response: {"id":258,"agent_name":"Success Test Agent 91","agent_phone":"555-0091","agent_email":"successtest91@example.com","agent_story":"Test story for success page test 91","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest91","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:59","updated_at":"2026-02-19 22:00:59"}
+❌ Test 92: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/259
+API URL: http://localhost:3001/api/grand-opening/events/259
+Success Response: /login
+API Response: {"id":259,"agent_name":"Success Test Agent 92","agent_phone":"555-0092","agent_email":"successtest92@example.com","agent_story":"Test story for success page test 92","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest92","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:59","updated_at":"2026-02-19 22:00:59"}
+❌ Test 93: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/260
+API URL: http://localhost:3001/api/grand-opening/events/260
+Success Response: /login
+API Response: {"id":260,"agent_name":"Success Test Agent 93","agent_phone":"555-0093","agent_email":"successtest93@example.com","agent_story":"Test story for success page test 93","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest93","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:59","updated_at":"2026-02-19 22:00:59"}
+❌ Test 94: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/261
+API URL: http://localhost:3001/api/grand-opening/events/261
+Success Response: /login
+API Response: {"id":261,"agent_name":"Success Test Agent 94","agent_phone":"555-0094","agent_email":"successtest94@example.com","agent_story":"Test story for success page test 94","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest94","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:59","updated_at":"2026-02-19 22:00:59"}
+❌ Test 95: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/262
+API URL: http://localhost:3001/api/grand-opening/events/262
+Success Response: /login
+API Response: {"id":262,"agent_name":"Success Test Agent 95","agent_phone":"555-0095","agent_email":"successtest95@example.com","agent_story":"Test story for success page test 95","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest95","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:59","updated_at":"2026-02-19 22:00:59"}
+❌ Test 96: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/263
+API URL: http://localhost:3001/api/grand-opening/events/263
+Success Response: /login
+API Response: {"id":263,"agent_name":"Success Test Agent 96","agent_phone":"555-0096","agent_email":"successtest96@example.com","agent_story":"Test story for success page test 96","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest96","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:59","updated_at":"2026-02-19 22:00:59"}
+❌ Test 97: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/264
+API URL: http://localhost:3001/api/grand-opening/events/264
+Success Response: /login
+API Response: {"id":264,"agent_name":"Success Test Agent 97","agent_phone":"555-0097","agent_email":"successtest97@example.com","agent_story":"Test story for success page test 97","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest97","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:59","updated_at":"2026-02-19 22:00:59"}
+❌ Test 98: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/265
+API URL: http://localhost:3001/api/grand-opening/events/265
+Success Response: /login
+API Response: {"id":265,"agent_name":"Success Test Agent 98","agent_phone":"555-0098","agent_email":"successtest98@example.com","agent_story":"Test story for success page test 98","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest98","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:59","updated_at":"2026-02-19 22:00:59"}
+❌ Test 99: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/266
+API URL: http://localhost:3001/api/grand-opening/events/266
+Success Response: /login
+API Response: {"id":266,"agent_name":"Success Test Agent 99","agent_phone":"555-0099","agent_email":"successtest99@example.com","agent_story":"Test story for success page test 99","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest99","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:59","updated_at":"2026-02-19 22:00:59"}
+❌ Test 100: FAIL - Success page HTTP 307, API HTTP 200
+Success URL: http://localhost:3001/admin/grand-opening/267
+API URL: http://localhost:3001/api/grand-opening/events/267
+Success Response: /login
+API Response: {"id":267,"agent_name":"Success Test Agent 100","agent_phone":"555-0100","agent_email":"successtest100@example.com","agent_story":"Test story for success page test 100","event_title":"Grand Opening","event_date":"2026-03-15","event_time":"19:00","event_timezone":"America/New_York","zoom_link":"https://zoom.us/j/successtest100","trainer_name":"Success Test Trainer","status":"planning","target_guests":100,"checklist_state":"{}","created_at":"2026-02-19 22:00:59","updated_at":"2026-02-19 22:00:59"}

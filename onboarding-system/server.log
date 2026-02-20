@@ -1,0 +1,160 @@
+
+> onboarding-system@0.1.0 dev
+> next dev -p 3001
+
+ ⚠ Invalid next.config.mjs options detected: 
+ ⚠     Unrecognized key(s) in object: 'serverComponentsExternalPackages' at "experimental"
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+ ⚠ `experimental.serverComponentsExternalPackages` has been moved to `serverExternalPackages`. Please update your next.config.mjs file accordingly.
+   ▲ Next.js 15.5.12
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.2.94:3001
+   - Environments: .env.local
+   - Experiments (use with caution):
+     · serverComponentsExternalPackages
+
+ ✓ Starting...
+ ✓ Ready in 885ms
+ ✓ Compiled /login in 268ms (560 modules)
+ GET /login 200 in 432ms
+ ✓ Compiled /_not-found in 93ms (565 modules)
+ GET /training 404 in 145ms
+ ⚠ Cross origin request detected from garylifeindex.com to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET /login 200 in 52ms
+ ✓ Compiled / in 117ms (628 modules)
+ GET / 200 in 264ms
+ GET /login 200 in 34ms
+ GET /login 200 in 53ms
+ GET /login 200 in 42ms
+ GET /grand-opening/1/invite 404 in 40ms
+ ✓ Compiled /join in 185ms (642 modules)
+ GET /join 200 in 263ms
+ GET /login 200 in 87ms
+ GET /login 200 in 52ms
+ GET /login 200 in 51ms
+ GET /login 200 in 49ms
+ GET /login 200 in 50ms
+ GET /links 404 in 39ms
+ GET /login 200 in 43ms
+ GET /login 200 in 42ms
+ GET /login 200 in 44ms
+ GET /login 200 in 43ms
+ GET /login 200 in 45ms
+ GET /login 200 in 24ms
+ GET /join 200 in 81ms
+ GET /login 200 in 43ms
+ GET /links 404 in 32ms
+ GET /login 200 in 74ms
+ GET /login 200 in 50ms
+ GET /login 200 in 50ms
+ ✓ Compiled in 346ms (253 modules)
+ GET /join 200 in 13ms
+ GET /login 200 in 52ms
+ GET /login 200 in 52ms
+ GET /login 200 in 50ms
+ GET /login 200 in 50ms
+ ✓ Compiled in 68ms (249 modules)
+ GET /join 200 in 17ms
+ ✓ Compiled in 75ms (637 modules)
+ GET /join 200 in 67ms
+ GET /join 200 in 11ms
+ GET /login 200 in 79ms
+ ✓ Compiled /links in 122ms (644 modules)
+ GET /links 200 in 224ms
+ GET /login 200 in 51ms
+ GET /links 200 in 70ms
+ GET /login 200 in 52ms
+ GET /login 200 in 47ms
+ GET /login 200 in 52ms
+ GET /login 200 in 51ms
+ GET /login 200 in 50ms
+ GET /login 200 in 48ms
+ GET /login 200 in 50ms
+ GET /login 200 in 48ms
+ GET /login 200 in 53ms
+ GET /login 200 in 50ms
+ GET /login 200 in 51ms
+ GET /links 200 in 71ms
+ GET /login 200 in 48ms
+ GET /login 200 in 49ms
+ GET /login 200 in 34ms
+ GET /login 200 in 48ms
+ GET /login 200 in 51ms
+ GET /login 200 in 49ms
+ GET /login 200 in 51ms
+ GET /login 200 in 50ms
+ GET /login 200 in 50ms
+ GET /login 200 in 51ms
+ GET /login 200 in 47ms
+ GET /login 200 in 49ms
+ GET /login 200 in 51ms
+ GET /login 200 in 50ms
+ GET /login 200 in 52ms
+ GET /login 200 in 50ms
+ GET /login 200 in 50ms
+ GET /login 200 in 51ms
+ GET /login 200 in 50ms
+ GET /login 200 in 51ms
+ GET /login 200 in 50ms
+ GET /login 200 in 49ms
+ ✓ Compiled /_not-found in 136ms (649 modules)
+ GET /pfr 404 in 241ms
+ GET /login 200 in 57ms
+ GET /login 200 in 45ms
+ GET /login 200 in 50ms
+ GET /login 200 in 54ms
+ GET /login 200 in 51ms
+ GET /login 200 in 49ms
+ GET /login 200 in 48ms
+ GET /login 200 in 52ms
+ GET /login 200 in 52ms
+ GET /login 200 in 52ms
+ GET /login 200 in 51ms
+ GET / 200 in 86ms
+ GET / 200 in 43ms
+ GET / 200 in 51ms
+ GET /sms-policy 404 in 38ms
+ GET /sms-policy 404 in 40ms
+ GET /sms-policy 404 in 39ms
+ GET /sms-policy 404 in 39ms
+ GET /login 200 in 48ms
+ GET /login 200 in 48ms
+ GET /login 200 in 52ms
+ GET /login 200 in 50ms
+ GET /login 200 in 50ms
+ GET /login 200 in 49ms
+ GET /login 200 in 50ms
+ GET /login 200 in 51ms
+ GET /login 200 in 50ms
+ GET /login 200 in 22ms
+ GET /login 200 in 49ms
+ GET /login 200 in 51ms
+ GET /login 200 in 50ms
+ GET /login 200 in 49ms
+ GET / 200 in 61ms
+ GET /login 200 in 51ms
+ GET /login 200 in 51ms
+ GET /login 200 in 50ms
+ GET /login 200 in 49ms
+ GET /login 200 in 33ms
+ GET /login 200 in 45ms
+ GET /login 200 in 49ms
+ GET /login 200 in 50ms
+ GET /login 200 in 23ms
+ GET /login 200 in 45ms
+ GET /login 200 in 43ms
+ GET /login 200 in 43ms
+ GET / 200 in 50ms
+ GET /login 200 in 43ms
+ GET /login 200 in 43ms
+ ✓ Compiled in 121ms (651 modules)
+ GET /join 200 in 86ms
+ ✓ Compiled /_not-found in 160ms (642 modules)
+ GET /links 404 in 253ms
+ GET /join 200 in 131ms
+ GET /links 404 in 7ms
+ GET /join 200 in 10ms
+ GET /links 404 in 7ms
+ GET /links 404 in 55ms
+[?25h
