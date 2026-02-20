@@ -1,0 +1,80 @@
+<div class="min-h-screen bg-[#0a0a0a] text-white">
+  <!-- Header -->
+  <div class="text-center py-16 px-4">
+    <div class="text-6xl mb-6">🎉</div>
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">
+      You're Invited!
+    </h1>
+    <h2 class="text-2xl text-purple-400 mb-6"><%= event.title %></h2>
+    <div class="text-gray-400 text-lg max-w-2xl mx-auto">
+      <p><strong>Date:</strong> <%= event.date %></p>
+      <p><strong>Time:</strong> <%= event.time %></p>
+      <% if (event.location) { %>
+      <p><strong>Location:</strong> <%= event.location %></p>
+      <% } %>
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-4 pb-16">
+    <% if (event.description) { %>
+    <div class="bg-white/5 border border-gray-800 rounded-xl p-8 mb-8">
+      <h3 class="text-xl font-bold mb-4">Event Details</h3>
+      <p class="text-gray-300 leading-relaxed"><%= event.description %></p>
+    </div>
+    <% } %>
+
+    <!-- RSVP Form -->
+    <div class="bg-white/5 border border-gray-800 rounded-xl p-8">
+      <h3 class="text-2xl font-bold mb-6 text-center">RSVP Now</h3>
+      <form method="POST" action="/api/events/<%= event.id %>/rsvp" class="max-w-md mx-auto">
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-purple-500"
+            placeholder="Enter your name"
+          />
+        </div>
+        
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-purple-500"
+            placeholder="Enter your email"
+          />
+        </div>
+        
+        <div class="mb-6">
+          <label for="phone" class="block text-sm font-medium text-gray-300 mb-2">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-purple-500"
+            placeholder="Enter your phone number"
+          />
+        </div>
+        
+        <button
+          type="submit"
+          class="w-full bg-purple-600 hover:bg-purple-500 text-white font-medium py-3 px-4 rounded-lg transition-colors"
+        >
+          Confirm RSVP
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-700 py-6 text-center">
+    <p class="text-gray-500 text-sm">
+      OOC Unlimited © 2026 — Mission before Commission
+    </p>
+  </footer>
+</div>
