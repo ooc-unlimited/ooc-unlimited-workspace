@@ -1,0 +1,207 @@
+<% 
+  // Define the homepage data
+  const services = [
+    {
+      title: 'Indexed Universal Life (IUL)',
+      desc: 'Build cash value tied to market index performance with downside protection. Ideal for families seeking growth potential with a safety net — tax-advantaged wealth building for the long term.',
+      icon: '📈',
+      for: 'Best for: Long-term wealth builders',
+    },
+    {
+      title: 'Whole Life Insurance',
+      desc: 'Guaranteed cash value growth and lifetime coverage with predictable premiums. A foundation of certainty for your family\'s financial future that never expires.',
+      icon: '🛡️',
+      for: 'Best for: Families seeking guaranteed protection',
+    },
+    {
+      title: 'Term Life Insurance',
+      desc: 'Affordable, straightforward coverage for a set period — 10, 20, or 30 years. Maximum protection when your family needs it most, at a price that fits any budget.',
+      icon: '📋',
+      for: 'Best for: Young families & budget-conscious',
+    },
+  ];
+
+  const values = [
+    { title: 'Personalized Guidance', desc: 'Every family is different. Your plan should be too. We take time to understand your unique situation before recommending anything.', icon: '🤝' },
+    { title: 'No-Pressure Approach', desc: 'Education first, always. You\'ll never be pushed into a product. We believe informed families make the best decisions.', icon: '💬' },
+    { title: 'Licensed & Experienced', desc: 'Access to 30+ A-rated carriers means we find the right fit — not just the one that pays us the most.', icon: '✅' },
+    { title: 'Mission-Driven', desc: 'Born from personal loss, built on purpose. Every policy we write protects a family from the unthinkable.', icon: '❤️' },
+  ];
+
+  const testimonials = [
+    { quote: "Gary took the time to explain everything — no pressure, no jargon. For the first time, I actually understood what I was buying and why it mattered for my family.", name: "Marcus T.", context: "Father of 3, first-time policyholder" },
+    { quote: "After my husband passed, I saw firsthand what happens without coverage. Gary made sure my kids would never face that. He genuinely cares.", name: "Angela R.", context: "Single mother, IUL client" },
+    { quote: "I thought life insurance was just an expense. Gary showed me how IUL could be a wealth-building tool. Complete game-changer for our family's future.", name: "David & Kim P.", context: "Young couple, IUL clients" },
+  ];
+%>
+
+<div class="min-h-screen bg-[#0a0a0a] text-white">
+  <!-- NAV -->
+  <nav class="fixed top-0 w-full z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-lg font-bold tracking-tight">
+        <span class="text-purple-400">Gary Cosby</span> <span class="text-zinc-400 font-normal text-sm">| OOC Unlimited</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm text-zinc-400">
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#services" class="hover:text-white transition-colors">Services</a>
+        <a href="#why" class="hover:text-white transition-colors">Why Gary</a>
+        <a href="/join" class="hover:text-white transition-colors">Join Our Team</a>
+        <a href="#" class="bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-lg transition-colors font-medium">
+          Book a Consultation
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="pt-32 pb-20 md:pt-44 md:pb-32 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-purple-400 font-semibold text-sm uppercase tracking-widest mb-4">OOC Unlimited — Life Insurance & Financial Services</p>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+        Protecting Families.<br />
+        <span class="text-purple-400">Building Futures.</span>
+      </h1>
+      <p class="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Your family deserves a financial safety net designed with care, not a sales pitch. 
+        Personalized life insurance solutions that protect what matters most.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#" class="bg-purple-600 hover:bg-purple-500 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-colors shadow-lg shadow-purple-600/20">
+          Book a Free Consultation
+        </a>
+        <a href="/join" class="border border-zinc-700 hover:border-purple-400 text-zinc-300 hover:text-white px-8 py-4 rounded-xl text-lg font-semibold transition-colors">
+          Join Our Team →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 md:py-28 px-6 bg-[#0d0d0d]">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-purple-400 font-semibold text-sm uppercase tracking-widest mb-4 text-center">About Gary</p>
+      <h2 class="text-3xl md:text-5xl font-bold mb-8 text-center">Mission Before Commission</h2>
+      <div class="text-zinc-400 text-lg leading-relaxed space-y-6 max-w-3xl mx-auto">
+        <p>
+          Gary Cosby Jr. didn't start in financial services. He spent years in retail management at Best Buy, 
+          building teams and hitting targets. But everything changed when his father passed away — without life insurance.
+        </p>
+        <p>
+          Gary watched his family scramble to cover final expenses, navigate financial uncertainty, and deal with the 
+          kind of stress no grieving family should face. That experience lit a fire that hasn't gone out.
+        </p>
+        <p>
+          Today, Gary leads OOC Unlimited with one mission: make sure no family goes through what his did. 
+          Every conversation starts with understanding, not selling. Every recommendation is built on what's right 
+          for the family — not what pays the highest commission.
+        </p>
+        <p class="text-white font-semibold text-xl text-center pt-4">
+          "Mission before commission — always."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-20 md:py-28 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-purple-400 font-semibold text-sm uppercase tracking-widest mb-4 text-center">Services</p>
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 text-center">Protection That Fits Your Life</h2>
+      <p class="text-zinc-400 text-lg max-w-2xl mx-auto text-center mb-12">Every family's needs are different. We offer multiple solutions to find the right fit.</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <% services.forEach(service => { %>
+        <div class="bg-white/5 border border-zinc-800 rounded-2xl p-8 hover:border-purple-500/50 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+          <span class="text-4xl mb-4"><%= service.icon %></span>
+          <h3 class="text-xl font-bold mb-3"><%= service.title %></h3>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-4 flex-1"><%= service.desc %></p>
+          <p class="text-purple-400 text-xs font-semibold uppercase tracking-wider mb-4"><%= service.for %></p>
+          <a href="#" class="text-purple-400 hover:text-purple-300 font-medium text-sm transition-colors">Learn more & book a call →</a>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY GARY -->
+  <section id="why" class="py-20 md:py-28 px-6 bg-[#0d0d0d]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-purple-400 font-semibold text-sm uppercase tracking-widest mb-4 text-center">Why Work With Gary</p>
+      <h2 class="text-3xl md:text-5xl font-bold mb-12 text-center">A Different Kind of Agent</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <% values.forEach(value => { %>
+        <div class="text-center p-6">
+          <span class="text-4xl mb-4 block"><%= value.icon %></span>
+          <h3 class="text-lg font-bold mb-2"><%= value.title %></h3>
+          <p class="text-zinc-400 text-sm leading-relaxed"><%= value.desc %></p>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-20 md:py-28 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-purple-400 font-semibold text-sm uppercase tracking-widest mb-4 text-center">Testimonials</p>
+      <h2 class="text-3xl md:text-5xl font-bold mb-12 text-center">What Families Are Saying</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <% testimonials.forEach(testimonial => { %>
+        <div class="bg-white/5 border border-zinc-800 rounded-2xl p-8">
+          <p class="text-zinc-300 italic leading-relaxed mb-6">"<%= testimonial.quote %>"</p>
+          <div>
+            <p class="text-white font-semibold"><%= testimonial.name %></p>
+            <p class="text-zinc-500 text-sm"><%= testimonial.context %></p>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN THE TEAM CTA -->
+  <section class="py-20 md:py-28 px-6 bg-[#0d0d0d]">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-purple-400 font-semibold text-sm uppercase tracking-widest mb-4">Careers</p>
+      <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to Build a Career That Matters?</h2>
+      <p class="text-zinc-400 text-lg mb-8 leading-relaxed">
+        We're building a team of licensed professionals who believe in protecting families — not just closing deals. 
+        Up to 133% compensation, 30+ carriers, real ownership, and a mission worth waking up for.
+      </p>
+      <a href="/join" class="inline-block bg-purple-600 hover:bg-purple-500 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-colors shadow-lg shadow-purple-600/20">
+        Learn More About Joining →
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-zinc-800 py-12 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <p class="text-lg font-bold mb-2">OOC Unlimited LLC</p>
+          <p class="text-zinc-500 text-sm italic">"Mission before commission."</p>
+        </div>
+        <div class="flex flex-col gap-2 text-sm text-zinc-400">
+          <a href="#" class="hover:text-white transition-colors">Home</a>
+          <a href="#about" class="hover:text-white transition-colors">About</a>
+          <a href="#services" class="hover:text-white transition-colors">Services</a>
+          <a href="/join" class="hover:text-white transition-colors">Join Our Team</a>
+        </div>
+        <div class="text-sm text-zinc-400">
+          <a href="#" class="hover:text-white transition-colors">Book a Consultation</a>
+        </div>
+      </div>
+      <div class="border-t border-zinc-800 pt-8">
+        <p class="text-xs text-zinc-600 leading-relaxed">
+          © <%= new Date().getFullYear() %> OOC Unlimited LLC. All rights reserved. 
+          Life insurance products are offered through licensed agents. Policy terms, conditions, and availability 
+          vary by state and carrier. This website is for informational purposes only and does not constitute 
+          financial, legal, or tax advice. Guarantees are based on the claims-paying ability of the issuing 
+          insurance company. OOC Unlimited LLC is not a registered investment advisor. Consult a qualified 
+          professional for advice specific to your situation.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>

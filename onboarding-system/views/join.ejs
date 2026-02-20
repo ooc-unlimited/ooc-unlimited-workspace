@@ -1,0 +1,215 @@
+<% 
+  // Define the join page data 
+  const stats = [
+    { label: 'Compensation', value: '133', suffix: '%' },
+    { label: 'A-Rated Carriers', value: '30', suffix: '+' },
+    { label: 'Years Combined Experience', value: '75', suffix: '+' },
+    { label: 'Agent Retention Rate', value: '89', suffix: '%' }
+  ];
+
+  const perks = [
+    { title: 'Industry-Leading Compensation', desc: 'Up to 133% first-year commissions on most products — among the highest in the industry. Plus renewal income that builds your passive revenue stream over time.', icon: '💰' },
+    { title: 'Warm Lead System', desc: 'Skip the cold calls. We provide qualified leads through our marketing system, plus proven scripts and follow-up sequences that convert.', icon: '📞' },
+    { title: '30+ A-Rated Carriers', desc: 'Access to the best companies in the business — State Farm, New York Life, Pacific Life, and more. Find the right fit for every client.', icon: '🏢' },
+    { title: 'Complete Training Program', desc: 'Master the GFI System™: our proven 4-step sales process that turns prospects into clients. Includes objection handling, presentation skills, and closing techniques.', icon: '🎓' },
+    { title: 'Advanced Marketing Support', desc: 'Professional websites, social media campaigns, email sequences, and branded materials. Look like the expert you are becoming.', icon: '📈' },
+    { title: 'Real Ownership Path', desc: 'This isn\'t just a job — it\'s ownership. Build your own agency, recruit your own team, and create generational wealth for your family.', icon: '🔑' }
+  ];
+
+  const requirements = [
+    'Life & Health Insurance License (we help you get it)',
+    'Hunger to build something meaningful',
+    'Coachable mindset and willingness to learn',
+    'Professional appearance and communication',
+    'Reliable transportation and smartphone'
+  ];
+
+  const faqs = [
+    {
+      q: 'Do I need experience in insurance or sales?',
+      a: 'No experience required. We\'ve trained successful agents from all backgrounds — retail, hospitality, education, military, and more. What matters is your mindset and willingness to learn our proven system.'
+    },
+    {
+      q: 'How much can I realistically earn my first year?',
+      a: 'First-year earnings vary based on activity level, but our agents who follow the system typically see $50K-$150K+ in their first year. Top performers exceed $200K. Remember: this is commission-based, so your income reflects your effort.'
+    },
+    {
+      q: 'What does the training process look like?',
+      a: 'Week 1-2: Licensing support and product knowledge. Week 3-4: GFI System training and role-playing. Week 5+: Field training with experienced agents. You\'re never thrown in alone — we build your confidence before you meet your first client.'
+    },
+    {
+      q: 'Is this remote, in-person, or hybrid?',
+      a: 'Hybrid model. Training is in-person for the best learning experience. Once licensed and trained, you have flexibility — work from our office, your home office, or in the field with clients. Results matter more than location.'
+    },
+    {
+      q: 'What makes GFI different from other agencies?',
+      a: 'Mission before commission. We don\'t just recruit bodies — we build careers. You get higher compensation, better training, more support, and a clear path to ownership. Plus access to our exclusive lead system and marketing tools.'
+    },
+    {
+      q: 'How quickly can I get started?',
+      a: 'Fast track: 2-4 weeks from application to first client meeting. This includes licensing (if needed), training completion, and onboarding. We help expedite your licensing and provide study materials to accelerate the process.'
+    }
+  ];
+%>
+
+<div class="min-h-screen bg-[#0a0a0a] text-white">
+  <style>
+    .text-purple-accent { color: #7B2FBE; }
+    .bg-purple-accent { background-color: #4A0E78; }
+    .border-purple-accent { border-color: #4A0E78; }
+    .gradient-text {
+      background: linear-gradient(135deg, #7B2FBE, #A855F7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
+
+  <!-- ════════ HERO ════════ -->
+  <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 px-6">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#1a0a2e] via-[#0a0a0a] to-[#0a0a0a]"></div>
+    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[600px] h-[600px] bg-purple-600/20 rounded-full blur-[120px]"></div>
+    <div class="relative z-10 text-center max-w-4xl mx-auto">
+      <span class="block text-sm font-semibold tracking-widest uppercase text-purple-400 mb-4">GFI × Team OOC Career Opportunity</span>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+        Build Your <span class="gradient-text">Financial Services</span> Career
+      </h1>
+      <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-8">
+        Join GFI × Team OOC and create a life-changing career in financial services. Up to 133% compensation, proven training system, and real ownership opportunities.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#apply" class="bg-purple-600 hover:bg-purple-500 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-colors shadow-lg shadow-purple-600/20">
+          Apply Today
+        </a>
+        <a href="#learn-more" class="border border-gray-700 hover:border-purple-400 text-gray-300 hover:text-white px-8 py-4 rounded-xl text-lg font-semibold transition-colors">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ STATS ════════ -->
+  <section class="py-12 md:py-20 px-6 bg-[#0d0d0d]">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+        <% stats.forEach(stat => { %>
+        <div class="text-center">
+          <div class="text-2xl sm:text-3xl lg:text-[2rem] font-black text-purple-accent whitespace-nowrap">
+            <%= stat.value %><%= stat.suffix %>
+          </div>
+          <div class="text-gray-400 text-sm md:text-base font-medium mt-2"><%= stat.label %></div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ PERKS ════════ -->
+  <section id="learn-more" class="py-20 md:py-28 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="block text-sm font-semibold tracking-widest uppercase text-purple-400 mb-4">What You Get</span>
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">More Than a Job — An Opportunity</h2>
+        <p class="text-gray-400 text-lg">
+          We don't just recruit. We build careers. Here's what separates GFI × Team OOC from everyone else.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <% perks.forEach(perk => { %>
+        <div class="bg-white/5 border border-gray-800 rounded-xl p-6 hover:border-purple-400/50 transition-colors">
+          <span class="text-3xl block mb-4"><%= perk.icon %></span>
+          <h3 class="text-xl font-bold mb-3 text-white"><%= perk.title %></h3>
+          <p class="text-gray-400 text-sm leading-relaxed"><%= perk.desc %></p>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ REQUIREMENTS ════════ -->
+  <section class="py-20 md:py-28 px-6 bg-[#0d0d0d]">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="block text-sm font-semibold tracking-widest uppercase text-purple-400 mb-4">Requirements</span>
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">Do You Have What It Takes?</h2>
+        <p class="text-gray-400 text-lg">
+          We're looking for the right people, not necessarily the most experienced. Here's what we need:
+        </p>
+      </div>
+      <div class="space-y-4">
+        <% requirements.forEach(req => { %>
+        <div class="flex items-start gap-4 bg-white/5 border border-gray-800 rounded-lg p-4">
+          <span class="text-green-400 text-xl flex-shrink-0 mt-0.5">✓</span>
+          <span class="text-gray-300"><%= req %></span>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ FAQ ════════ -->
+  <section class="py-20 md:py-28 px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="block text-sm font-semibold tracking-widest uppercase text-purple-400 mb-4">FAQ</span>
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">Questions? We Have Answers.</h2>
+      </div>
+      <div class="space-y-4">
+        <% faqs.forEach((faq, index) => { %>
+        <div class="border border-gray-800 rounded-xl overflow-hidden">
+          <button onclick="toggleFAQ(<%= index %>)" class="w-full flex justify-between items-center p-5 md:p-6 text-left hover:bg-white/5 transition-colors">
+            <span class="font-semibold text-white pr-4"><%= faq.q %></span>
+            <span id="faq-icon-<%= index %>" class="text-purple-400 text-2xl flex-shrink-0">+</span>
+          </button>
+          <div id="faq-content-<%= index %>" class="hidden border-t border-gray-800 p-5 md:p-6 bg-white/[0.02]">
+            <p class="text-gray-400 leading-relaxed"><%= faq.a %></p>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ CTA ════════ -->
+  <section id="apply" class="py-20 md:py-28 px-6 bg-[#0d0d0d]">
+    <div class="max-w-3xl mx-auto text-center">
+      <span class="block text-sm font-semibold tracking-widest uppercase text-purple-400 mb-4">Ready to Start?</span>
+      <h2 class="text-3xl md:text-5xl font-bold mb-6">Your Future Starts Today</h2>
+      <p class="text-gray-400 text-lg mb-8">
+        Don't wait for the "perfect" time. The best time to build your financial services career is now. 
+        Apply today and take the first step toward financial freedom.
+      </p>
+      <a href="https://calendly.com/gary-cosby-jr/career-opportunity" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-600 hover:bg-purple-500 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-colors shadow-lg shadow-purple-600/20">
+        Schedule Your Interview
+      </a>
+    </div>
+  </section>
+
+  <!-- ════════ FOOTER ════════ -->
+  <footer class="border-t border-gray-800 py-12 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center">
+        <p class="text-lg font-bold mb-2 text-white">OOC Unlimited LLC</p>
+        <p class="text-zinc-500 text-sm italic mb-6">"Mission before commission."</p>
+        <p class="text-xs text-zinc-600">
+          © <%= new Date().getFullYear() %> OOC Unlimited LLC. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+function toggleFAQ(index) {
+  const content = document.getElementById(`faq-content-${index}`);
+  const icon = document.getElementById(`faq-icon-${index}`);
+  
+  if (content.classList.contains('hidden')) {
+    content.classList.remove('hidden');
+    icon.textContent = '−';
+  } else {
+    content.classList.add('hidden');
+    icon.textContent = '+';
+  }
+}
+</script>

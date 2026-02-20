@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %></title>
+  <meta name="description" content="<%= description %>">
+  <meta name="author" content="OOC Unlimited">
+  <meta name="keywords" content="financial services career,insurance agent opportunity,GFI,Team OOC,life insurance career,IUL,financial advisor,insurance recruiting,OOC Unlimited">
+  <meta name="creator" content="OOC Unlimited">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://garylifeindex.com<%= typeof canonicalPath !== 'undefined' ? canonicalPath : '' %>">
+  <meta name="google-site-verification" content="UtbsyO8otRWksWESnwO54gR-iBWI3E7STgENqqE1_Yo">
+  <meta property="og:title" content="<%= title %>">
+  <meta property="og:description" content="<%= description %>">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<%= title %>">
+  <meta name="twitter:description" content="<%= description %>">
+  <meta name="twitter:image" content="https://garylifeindex.com/images/nyse-signing.jpeg">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'purple-accent': '#7B2FBE'
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    .gradient-text {
+      background: linear-gradient(135deg, #7B2FBE, #A855F7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-white min-h-screen">
+  <%- body %>
+</body>
+</html>
