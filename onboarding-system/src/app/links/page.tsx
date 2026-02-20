@@ -82,6 +82,7 @@ export default function LinksPage() {
   const [activeCategory, setActiveCategory] = useState('All');
 
   const links = [
+    // ==================== CORE PLATFORMS ====================
     {
       title: 'Tevah Tech Platform',
       description: 'Your back office platform for commission tracking, recruiting metrics, and operational data',
@@ -92,23 +93,9 @@ export default function LinksPage() {
     {
       title: 'Ringy CRM',
       description: 'Customer relationship management system for managing leads, contacts, and sales pipeline',
-      url: 'https://app.ringy.com/',
+      url: 'https://app.ringy.com/home/sms',
       category: 'Platforms',
       icon: '📱'
-    },
-    {
-      title: 'PropHog Lead Generation',
-      description: 'Advanced lead generation platform for finding licensed agents and prospects',
-      url: 'https://agent-recruiting.prophog.ai/',
-      category: 'Lead Generation',
-      icon: '🎯'
-    },
-    {
-      title: 'iDecide Presentations',
-      description: 'Interactive presentation platform for client meetings and consultations',
-      url: 'https://login.idecide.com/',
-      category: 'Sales Tools',
-      icon: '🎥'
     },
     {
       title: 'GoHighLevel',
@@ -118,18 +105,50 @@ export default function LinksPage() {
       icon: '🚀'
     },
     {
-      title: 'Gary Life Index',
-      description: 'Our main company website and agent portal for resources and information',
-      url: 'https://garylifeindex.com/',
-      category: 'Company',
-      icon: '🏢'
+      title: 'PropHog Lead Generation',
+      description: 'Advanced lead generation platform for finding licensed agents and prospects',
+      url: 'https://agent-recruiting.prophog.ai/leads',
+      category: 'Lead Generation',
+      icon: '🎯'
+    },
+    
+    // ==================== PROLIFIC SYSTEM ====================
+    {
+      title: 'Prolific Drive',
+      description: 'Google Drive with all training slides, templates, emails, and announcements from Coach DC',
+      url: 'https://drive.google.com/drive/folders/prolific-system',
+      category: 'Training',
+      icon: '📁'
     },
     {
-      title: 'Training Videos',
-      description: 'Access comprehensive training materials and educational content',
-      url: '/training',
-      category: 'Training',
-      icon: '📚'
+      title: 'Onboarding Dashboard',
+      description: 'Complete onboarding system for new agents - 3-part Prolific system automation',
+      url: '/admin/onboarding',
+      category: 'Onboarding',
+      icon: '🎓'
+    },
+    {
+      title: 'Ethos Insurance',
+      description: 'Income protection policies for new agents - practice what you preach',
+      url: 'https://apply.ethoslife.com/',
+      category: 'Insurance',
+      icon: '🛡️'
+    },
+    {
+      title: 'Onboarding 1 Booking',
+      description: 'Schedule Client Experience sessions (within 48h of agent code)',
+      url: 'https://calendly.com/gary-cosby-jr/onboarding-1',
+      category: 'Scheduling',
+      icon: '📅'
+    },
+
+    // ==================== SALES & PRESENTATIONS ====================
+    {
+      title: 'iDecide Presentations',
+      description: 'Interactive presentation platform - GFI standard and Welcome to GFI for prospects',
+      url: 'https://login.idecide.com/members/#contacts',
+      category: 'Sales Tools',
+      icon: '🎥'
     },
     {
       title: 'Agent Dashboard',
@@ -152,6 +171,84 @@ export default function LinksPage() {
       category: 'Sales Tools',
       icon: '💬'
     },
+
+    // ==================== PRODUCTIVITY TOOLS ====================
+    {
+      title: 'QMD Search',
+      description: 'Quick markdown search - semantic search across 157 files, 5 collections',
+      url: 'https://github.com/tobi/qmd',
+      category: 'Productivity',
+      icon: '🔍'
+    },
+    {
+      title: 'TradingView Pro',
+      description: 'Real-time CME/COMEX/NYMEX data for NQ1! futures and trading analysis',
+      url: 'https://www.tradingview.com/',
+      category: 'Trading',
+      icon: '📈'
+    },
+    {
+      title: 'Granola.ai Transcription',
+      description: 'Meeting transcription service - 6-hour token refresh cycle',
+      url: 'https://granola.ai/',
+      category: 'Productivity',
+      icon: '🎙️'
+    },
+    {
+      title: 'Google Workspace',
+      description: 'Donna account for calendar, email, drive, docs, sheets, and scheduling',
+      url: 'https://workspace.google.com/',
+      category: 'Productivity',
+      icon: '📧'
+    },
+
+    // ==================== COMMUNICATIONS ====================
+    {
+      title: 'Twilio Console',
+      description: 'SMS and voice provider - integrates with GHL LC Phone',
+      url: 'https://www.twilio.com/console',
+      category: 'Communications',
+      icon: '📞'
+    },
+    {
+      title: 'SiriusXM Yacht Soul',
+      description: 'Background ambiance music for Virtual Office Zoom meetings',
+      url: 'https://player.siriusxm.com/player/channel-xtra/yacht-soul/',
+      category: 'Ambiance',
+      icon: '🎵'
+    },
+    {
+      title: 'Discord Server',
+      description: 'OOC Unlimited server - agent channels, approvals, pipeline, alerts',
+      url: 'https://discord.gg/ooc-unlimited',
+      category: 'Communications',
+      icon: '💬'
+    },
+
+    // ==================== COMPANY & TRAINING ====================
+    {
+      title: 'Gary Life Index',
+      description: 'Main company website and agent portal for resources and information',
+      url: 'https://garylifeindex.com/',
+      category: 'Company',
+      icon: '🏢'
+    },
+    {
+      title: 'Training Videos',
+      description: 'Access comprehensive training materials and educational content',
+      url: '/training',
+      category: 'Training',
+      icon: '📚'
+    },
+    {
+      title: 'Scripts Library',
+      description: 'Sales scripts and templates for prospecting and client conversations',
+      url: '/scripts',
+      category: 'Sales Tools',
+      icon: '📝'
+    },
+
+    // ==================== LEGAL & COMPLIANCE ====================
     {
       title: 'Privacy Policy',
       description: 'Our privacy policy and data protection guidelines',
@@ -168,7 +265,7 @@ export default function LinksPage() {
     }
   ];
 
-  const categories = ['All', ...Array.from(new Set(links.map(link => link.category)))];
+  const categories = ['All', 'Platforms', 'Training', 'Onboarding', 'Sales Tools', 'Productivity', 'Communications', 'Company', 'Legal'];
   const filteredLinks = activeCategory === 'All' ? links : links.filter(link => link.category === activeCategory);
 
   return (
